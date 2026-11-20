@@ -39,7 +39,64 @@ LLM_MODEL   = os.environ.get("LLM_MODEL", "llama-3.1-8b-instant")
 MOCK_MODE = not bool(LLM_API_KEY)   # automatically True when no key is set
 
 
-# -- Style profile extractor ---------------------------------------------------
+# -- Hardcoded persona style rules (overrides noisy synthetic data) ------------
+
+PERSONA_RULES = {
+    "alice": """Alice writes very formal, polished professional emails.
+RULES (follow strictly):
+- Always open with "Dear [Name]," (use a realistic first name)
+- Never use contractions: write "do not" not "don't", "cannot" not "can't", "I would" not "I'd"
+- Use formal vocabulary: "I am pleased to confirm", "Please be advised", "I would like to inform you", "I shall", "Kindly", "Furthermore", "In addition"
+- Write in complete, grammatically perfect sentences — no fragments
+- Tone is measured, polite, never casual
+- Always close with a formal sign-off on its own line: "Best regards,\\nAlice" or "Kind regards,\\nAlice" or "Sincerely,\\nAlice"
+- Emails are 3–5 sentences long""",
+
+    "bob": """Bob writes casual, laid-back emails like he's texting a friend.
+RULES (follow strictly):
+- Open with "Hey [Name]," or "Hi," or just dive straight in
+- Use contractions everywhere: "I'd", "can't", "won't", "that's", "it's", "we'll"
+- Use informal/slang words: "yeah", "nope", "totally", "sounds good", "no worries", "tbh", "btw", "fyi", "cool", "awesome"
+- Short sentences. Sometimes incomplete sentences. That's fine.
+- No corporate buzzwords, no formal vocabulary at all
+- Close with "Cheers, Bob" or "Later, Bob" or "Thanks, Bob" — always lowercase-feeling
+- Emails are 2–3 short sentences max""",
+
+    "carol": """Carol writes warm, enthusiastic, friendly emails — she genuinely loves people.
+RULES (follow strictly):
+- Open with "Hi [Name]! Hope you're doing well!" or "Hello [Name]! So great to hear from you!" — always with exclamation marks
+- Use exclamation marks throughout — multiple per email
+- Warm phrases: "That sounds wonderful!", "I'd absolutely love to!", "How exciting!", "Can't wait!", "So appreciate you reaching out!"
+- Ask a friendly follow-up question to show genuine interest
+- Never sound cold or transactional — always personal and caring
+- Close with "Warmly, Carol" or "Talk soon! Carol" or "Take care! Carol"
+- Emails are 3–4 cheerful sentences""",
+
+    "dave": """Dave writes the shortest possible emails — he values time above everything.
+RULES (follow strictly):
+- Often NO greeting at all — or just "[Name] -" on the first line
+- Responses are 1–3 sentences MAXIMUM, often just 1
+- Accept = "Yes." or "Fine." or "Works for me." or "Agreed."
+- Reject = "No." or "Can't." or "Declined." or "Not possible."
+- Defer = "Later." or "Not now." or "Revisit next month."
+- Request info = "Need more details." or "What's the context?" or "Clarify X first."
+- No filler words, no pleasantries, no "I hope this email finds you well"
+- Close with just "-Dave" or "Dave" or nothing at all
+- If the email is 1 sentence, that is a success""",
+
+    "eve": """Eve writes structured, analytical emails — everything is evidence-based.
+RULES (follow strictly):
+- Open with "Dear [Name]," or "Hello [Name],"
+- Reference data, metrics, or logic: "Based on the available data...", "The risk-benefit analysis indicates...", "From an analytical standpoint...", "The evidence suggests...", "Considering the metrics..."
+- Use conditional, precise language: "Subject to...", "Provided that...", "Contingent on...", "This depends on..."
+- May use a brief numbered list or structure if the reply has multiple points
+- Never emotional, always rational and objective
+- Close with "Best, Eve" or "Regards, Eve" or "Analytically yours, Eve"
+- Emails are 3–5 structured sentences""",
+}
+
+
+# -- Style profile extractor (fallback for unknown users) ----------------------
 
 def _extract_style_profile(memories: List[Dict[str, Any]]) -> str:
     """
@@ -104,13 +161,20 @@ def _build_prompt(
     memories: List[Dict[str, Any]],
     include_memories: bool = True,
     include_decision: bool = True,
+    user_id: str = None,
 ) -> str:
     """
-    Build the LLM prompt using a style profile + a few diverse examples.
-    Avoids dumping 20 near-identical template responses which causes the LLM
-    to copy them verbatim instead of writing a specific reply.
+    Build the LLM prompt using hardcoded PERSONA_RULES (if available for this
+    user) or a style profile extracted from memories as fallback.
     """
-    if include_memories and memories:
+    # --- Style section ---
+    if user_id and user_id in PERSONA_RULES:
+        # Hardcoded vivid rules — far better than noisy synthetic data
+        mem_section = (
+            f"## Persona Style Rules — FOLLOW THESE EXACTLY\n\n"
+            f"{PERSONA_RULES[user_id]}"
+        )
+    elif include_memories and memories:
         style_profile = _extract_style_profile(memories)
 
         # Pick 3 topically diverse examples (spread across the ranked list)
@@ -145,7 +209,7 @@ def _build_prompt(
     )
 
     prompt = f"""You are simulating how a specific person replies to emails.
-Study their style profile and examples below, then write a reply to the new email.
+Study the style rules/profile below, then write a ONE-OFF reply to the new email.
 
 {mem_section}
 
@@ -157,10 +221,10 @@ Study their style profile and examples below, then write a reply to the new emai
 
 {decision_line}
 Write a reply that:
-- Directly addresses the SPECIFIC content and topic of the email above
-- Uses the person's writing style (tone, greeting, sign-off, sentence length) from the examples
-- Does NOT copy example phrases word-for-word — write fresh, specific content
-- Is complete (greeting + body + sign-off)
+- Directly addresses the SPECIFIC content and topic of the email above (names, dates, topics)
+- Follows the persona style rules STRICTLY (tone, greeting, sign-off, sentence length, vocabulary)
+- Does NOT copy any template phrases verbatim — write fresh, specific content every time
+- Is complete (greeting + body + sign-off, unless the persona rules say otherwise)
 - Does NOT mention that you are an AI
 
 Write ONLY the reply. No labels, no preamble."""
@@ -185,30 +249,42 @@ def _call_llm(prompt: str) -> str:
 
     client = Groq(api_key=LLM_API_KEY)
 
-    chat_completion = client.chat.completions.create(
-        messages=[
-            {
-                "role": "system",
-                "content": (
-                    "You are an email assistant. Always reply with a complete, "
-                    "specific email response that directly addresses the content "
-                    "of the incoming email. Never return a generic or empty response."
-                ),
-            },
-            {"role": "user", "content": prompt},
-        ],
-        model=LLM_MODEL,
-        temperature=0.9,
-        max_tokens=600,
-    )
-    content = chat_completion.choices[0].message.content
-    text = content.strip() if content else ""
-    if not text:
-        raise ValueError(
-            "LLM returned an empty response. "
-            "Try a longer or more specific email input."
+    for attempt in range(3):
+        chat_completion = client.chat.completions.create(
+            messages=[
+                {
+                    "role": "system",
+                    "content": (
+                        "You are an email assistant. Always reply with a complete, "
+                        "specific email response that directly addresses the content "
+                        "of the incoming email. Never return a generic or empty response."
+                    ),
+                },
+                {"role": "user", "content": prompt},
+            ],
+            model=LLM_MODEL,
+            temperature=0.7 + attempt * 0.1,   # raise temp slightly on retry
+            max_tokens=600,
         )
-    return text
+        msg = chat_completion.choices[0].message
+
+        # Reasoning models (gpt-oss-*) sometimes put the answer in
+        # reasoning_content when content is empty — handle both fields
+        content = msg.content or ""
+        if not content.strip():
+            reasoning = getattr(msg, "reasoning_content", None) or ""
+            content = reasoning
+
+        text = content.strip()
+        if text:
+            return text
+        print(f"  [warn] Empty response (attempt {attempt+1}/3), retrying…")
+
+    raise ValueError(
+        "LLM returned empty after 3 attempts. "
+        "Try a more descriptive email input, e.g. "
+        "'Can we schedule a meeting on Monday to review the Q3 budget?'"
+    )
 
 
 # -- Mock mode -----------------------------------------------------------------
@@ -247,6 +323,7 @@ def generate_response(
     memories: List[Dict[str, Any]],
     force_mock: bool = False,
     ablation_mode: str = "full",
+    user_id: str = None,
 ) -> Dict[str, Any]:
     """
     Generate a personalized email response using retrieved historical memories.
@@ -260,6 +337,8 @@ def generate_response(
                                'full'        — memories + ML decision (default)
                                'memory_only' — memories only, no ML decision
                                'no_context'  — neither memories nor ML decision
+        user_id            : persona name (alice/bob/carol/dave/eve) — enables
+                               hardcoded PERSONA_RULES for authentic style
 
     Returns:
         Dict with keys:
@@ -288,6 +367,7 @@ def generate_response(
             predicted_decision,
             memories,
             **flags,
+            user_id=user_id,
         )
         text = _call_llm(prompt)
         mode = "real"
@@ -298,5 +378,5 @@ def generate_response(
         "model":         LLM_MODEL if not use_mock else "mock",
         "n_memories":    len(memories) if flags["include_memories"] else 0,
         "ablation_mode": ablation_mode,
-        "prompt":        _build_prompt(incoming_email, predicted_decision, memories, **flags) if not use_mock else "(mock)"
+        "prompt":        _build_prompt(incoming_email, predicted_decision, memories, **flags, user_id=user_id) if not use_mock else "(mock)"
     }

@@ -176,6 +176,7 @@ def run_experiment() -> None:
             incoming_email     = row["incoming_email"],
             predicted_decision = pred_decision,
             memories           = memories,
+            user_id            = row["user_id"],
         )
         generated_text = gen_result["response"]
 
@@ -232,6 +233,7 @@ def run_experiment() -> None:
                     predicted_decision = pred_dec,
                     memories           = memories,
                     ablation_mode      = cond,
+                    user_id            = row["user_id"],
                 )
                 eval_m = evaluate_response(
                     generated          = gen_result["response"],

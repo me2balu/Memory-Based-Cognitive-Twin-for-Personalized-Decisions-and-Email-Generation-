@@ -1,18 +1,19 @@
 # ─────────────────────────────────────────────────────────────────────────────
 # Memory-Based Cognitive Twin — Python dependencies
+# Requires Python 3.11 or 3.12  (NOT 3.13+)
 # Install with:  pip install -r requirements.txt
 # ─────────────────────────────────────────────────────────────────────────────
 
 # Core scientific stack
-numpy>=1.24
+numpy>=1.24,<2.1
 pandas>=2.0
 scikit-learn>=1.3
 
 # Sentence Transformers for memory embeddings
 sentence-transformers>=2.7
 
-# Google Gemini LLM API
-google-generativeai>=0.7
+# LLM provider — Groq (free tier, no billing needed)
+groq>=0.9
 
 # Plotting
 matplotlib>=3.7

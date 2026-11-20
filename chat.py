@@ -87,6 +87,7 @@ def reply(user_input, user_id, df, ct_model, le, tfidf_vec, all_embs, memory_sto
         incoming_email     = user_input,
         predicted_decision = predicted_decision,
         memories           = memories,
+        user_id            = user_id,
     )
 
     # Display
