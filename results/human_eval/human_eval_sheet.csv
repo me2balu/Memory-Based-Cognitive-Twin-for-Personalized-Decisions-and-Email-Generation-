@@ -1,0 +1,103 @@
+eval_id,incoming_email,generated_response,Q1_inferred_decision__ACCEPT_REJECT_DEFER_MAYBE_REQUEST_MORE_INFO,Q2_addresses_email__1to5,Q3_naturalness__1to5,Q4_additional_comments
+E01,"Subject: Webinar Registration
+
+Would you like to register for the marketing strategy webinar on next sprint?","[MOCK RESPONSE — NOT A REAL LLM OUTPUT]
+
+Decision: ACCEPT
+This is a placeholder response generated in MOCK MODE because no LLM_API_KEY was provided.
+(style hint from memory: ""Yo Quinn,
+Maybe, let me think before giving a final answer. btw, please do not h..."")
+
+To get real responses, set LLM_API_KEY in your .env file.",,,,
+E02,"Subject: Collaboration Request
+
+We'd love to collaborate with you on the vendor evaluation project. Are you interested?","[MOCK RESPONSE — NOT A REAL LLM OUTPUT]
+
+Decision: ACCEPT
+This is a placeholder response generated in MOCK MODE because no LLM_API_KEY was provided.
+(style hint from memory: ""Hey Sam,
+Yeah, sounds good with your request. FYI, please do not hesitate to rea..."")
+
+To get real responses, set LLM_API_KEY in your .env file.",,,,
+E03,"Subject: Meeting Request
+
+Hi, could we schedule a sprint planning meeting next Tuesday at 3pm? It should only take about 30 minutes.","[MOCK RESPONSE — NOT A REAL LLM OUTPUT]
+
+Decision: ACCEPT
+This is a placeholder response generated in MOCK MODE because no LLM_API_KEY was provided.
+(style hint from memory: ""Hello Jordan! Great to hear from you!
+I'd love to with your request. Great news ..."")
+
+To get real responses, set LLM_API_KEY in your .env file.",,,,
+E04,"Subject: Ambiguous Follow-up
+
+Following up on our previous discussion about API integration.","[MOCK RESPONSE — NOT A REAL LLM OUTPUT]
+
+Decision: REQUEST_MORE_INFORMATION
+This is a placeholder response generated in MOCK MODE because no LLM_API_KEY was provided.
+(style hint from memory: ""Hi Alex! Hope you're doing well!
+I'd love to know more about before I can procee..."")
+
+To get real responses, set LLM_API_KEY in your .env file.",,,,
+E05,"Subject: Task Assignment
+
+Can you take on the security audit task? It needs to be done by next sprint.","[MOCK RESPONSE — NOT A REAL LLM OUTPUT]
+
+Decision: ACCEPT
+This is a placeholder response generated in MOCK MODE because no LLM_API_KEY was provided.
+(style hint from memory: ""Dear Casey,
+The evidence supports proceeding with your request. From an analytic..."")
+
+To get real responses, set LLM_API_KEY in your .env file.",,,,
+E06,"Subject: New Contact
+
+Hi, I'm Alex from NextGen Systems. I wanted to connect regarding vendor evaluation.","[MOCK RESPONSE — NOT A REAL LLM OUTPUT]
+
+Decision: REQUEST_MORE_INFORMATION
+This is a placeholder response generated in MOCK MODE because no LLM_API_KEY was provided.
+(style hint from memory: ""Hello Sam,
+Please provide quantitative details on before I can proceed. Consider..."")
+
+To get real responses, set LLM_API_KEY in your .env file.",,,,
+E07,"Subject: Collaboration Request
+
+We'd love to collaborate with you on the data analysis project. Are you interested?","[MOCK RESPONSE — NOT A REAL LLM OUTPUT]
+
+Decision: ACCEPT
+This is a placeholder response generated in MOCK MODE because no LLM_API_KEY was provided.
+(style hint from memory: ""Riley -
+Yes. with your request.
+Regards, Dave..."")
+
+To get real responses, set LLM_API_KEY in your .env file.",,,,
+E08,"Subject: Optional Workshop
+
+There's an optional security audit workshop happening tomorrow. Would you like to join?","[MOCK RESPONSE — NOT A REAL LLM OUTPUT]
+
+Decision: MAYBE
+This is a placeholder response generated in MOCK MODE because no LLM_API_KEY was provided.
+(style hint from memory: ""Quinn -
+Uncertain. before giving a final answer.
+Dave..."")
+
+To get real responses, set LLM_API_KEY in your .env file.",,,,
+E09,"Subject: Partnership Proposal
+
+We'd like to explore a potential partnership around roadmap prioritization. What are your thoughts?","[MOCK RESPONSE — NOT A REAL LLM OUTPUT]
+
+Decision: MAYBE
+This is a placeholder response generated in MOCK MODE because no LLM_API_KEY was provided.
+(style hint from memory: ""Hello Alex,
+This requires further thought before giving a final answer. In addit..."")
+
+To get real responses, set LLM_API_KEY in your .env file.",,,,
+E10,"Subject: Unclear Proposal
+
+We'd like to move forward with performance review. Please confirm your availability.","[MOCK RESPONSE — NOT A REAL LLM OUTPUT]
+
+Decision: ACCEPT
+This is a placeholder response generated in MOCK MODE because no LLM_API_KEY was provided.
+(style hint from memory: ""Dear Morgan,
+I would be happy to with your request. Please note that please do n..."")
+
+To get real responses, set LLM_API_KEY in your .env file.",,,,

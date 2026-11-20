@@ -1,0 +1,77 @@
+{
+  "alice": {
+    "avg_sentence_length": {
+      "mean": 7.86,
+      "std": 0.79
+    },
+    "type_token_ratio": {
+      "mean": 0.9531,
+      "std": 0.0458
+    },
+    "formality_ratio": {
+      "mean": 0.1254,
+      "std": 0.0368
+    },
+    "n_samples": 35
+  },
+  "bob": {
+    "avg_sentence_length": {
+      "mean": 6.95,
+      "std": 0.65
+    },
+    "type_token_ratio": {
+      "mean": 0.9746,
+      "std": 0.0279
+    },
+    "formality_ratio": {
+      "mean": 0.0469,
+      "std": 0.0043
+    },
+    "n_samples": 37
+  },
+  "carol": {
+    "avg_sentence_length": {
+      "mean": 5.11,
+      "std": 0.6
+    },
+    "type_token_ratio": {
+      "mean": 0.9202,
+      "std": 0.0363
+    },
+    "formality_ratio": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "n_samples": 35
+  },
+  "dave": {
+    "avg_sentence_length": {
+      "mean": 2.5,
+      "std": 0.46
+    },
+    "type_token_ratio": {
+      "mean": 1.0,
+      "std": 0.0
+    },
+    "formality_ratio": {
+      "mean": 0.0413,
+      "std": 0.0643
+    },
+    "n_samples": 37
+  },
+  "eve": {
+    "avg_sentence_length": {
+      "mean": 7.89,
+      "std": 0.72
+    },
+    "type_token_ratio": {
+      "mean": 0.9609,
+      "std": 0.0369
+    },
+    "formality_ratio": {
+      "mean": 0.0496,
+      "std": 0.0367
+    },
+    "n_samples": 36
+  }
+}

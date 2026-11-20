@@ -1,0 +1,1723 @@
+record_id,user_id,timestamp,email_subject,incoming_email,user_response,decision
+alice_0000,alice,2024-01-05 00:00:00,New Initiative,"Subject: New Initiative
+
+We're thinking of launching a stakeholder alignment initiative. Does this interest you?","Dear Sam,
+I will review and revert before giving a final answer. In addition, please do not hesitate to reach out.
+Kind regards,
+Alice",MAYBE
+carol_0000,carol,2024-01-05 00:00:00,Ambiguous Follow-up,"Subject: Ambiguous Follow-up
+
+Following up on our previous discussion about API integration.","Hi Taylor! Hope you're doing well!
+Could you share a bit more about before I can proceed. On top of that, let me know if you need anything else!
+Warmly,
+Carol",REQUEST_MORE_INFORMATION
+alice_0001,alice,2024-01-08 00:00:00,Policy Change,"Subject: Policy Change
+
+We propose changing the product launch policy to allow optional attendance. Do you approve?","Hello Casey,
+I regret to inform you on this occasion. Please note that please do not hesitate to reach out.
+Best regards,
+Alice",REJECT
+bob_0000,bob,2024-01-08 00:00:00,Partnership Proposal,"Subject: Partnership Proposal
+
+We'd like to explore a potential partnership around budget allocation. What are your thoughts?","Hey Morgan,
+Maybe, let me think before giving a final answer. Just so you know, please do not hesitate to reach out.
+Cheers,
+Bob",MAYBE
+dave_0000,dave,2024-01-08 00:00:00,Technical Question,"Subject: Technical Question
+
+We're experiencing issues with API integration. Could you advise?","Hi,
+More info needed. before I can proceed.
+-Dave",REQUEST_MORE_INFORMATION
+eve_0000,eve,2024-01-08 00:00:00,New Contact,"Subject: New Contact
+
+Hi, I'm Riley from InnovateLtd. I wanted to connect regarding marketing strategy.","Dear Sam,
+What are the key metrics for before I can proceed. Furthermore, I will review all relevant parameters.
+Best,
+Eve",REQUEST_MORE_INFORMATION
+alice_0002,alice,2024-01-10 00:00:00,Ambiguous Follow-up,"Subject: Ambiguous Follow-up
+
+Following up on our previous discussion about hiring pipeline.","Hello Casey,
+Could you kindly provide additional details before I can proceed. Please note that please do not hesitate to reach out.
+Kind regards,
+Alice",REQUEST_MORE_INFORMATION
+carol_0001,carol,2024-01-10 00:00:00,Meeting Request,"Subject: Meeting Request
+
+Hi, could we schedule a client onboarding meeting this Thursday morning? It should only take about 45 minutes.","Hi Riley! Hope you're doing well!
+That sounds wonderful with your request. On top of that, let me know if you need anything else!
+Warmly,
+Carol",ACCEPT
+bob_0001,bob,2024-01-11 00:00:00,Invitation,"Subject: Invitation
+
+You are invited to join our user research committee. Would you be available to participate?","Yo Casey,
+Yeah, sounds good with your request. Just so you know, please do not hesitate to reach out.
+Thanks,
+Bob",ACCEPT
+alice_0003,alice,2024-01-12 00:00:00,Webinar Registration,"Subject: Webinar Registration
+
+Would you like to register for the performance review webinar on next sprint?","Dear Morgan,
+I would be happy to with your request. Please note that please do not hesitate to reach out.
+Kind regards,
+Alice",ACCEPT
+carol_0002,carol,2024-01-12 00:00:00,Long-term Planning,"Subject: Long-term Planning
+
+We need to finalize the budget allocation roadmap for next year. Can you review it?","Hi Riley! Hope you're doing well!
+Can we come back to this soon? until we have more clarity. I'm excited to say that let me know if you need anything else!
+Talk soon!
+Carol",DEFER
+dave_0001,dave,2024-01-12 00:00:00,New Initiative,"Subject: New Initiative
+
+We're thinking of launching a performance review initiative. Does this interest you?","Hi,
+Possibly. before giving a final answer.
+-Dave",MAYBE
+carol_0003,carol,2024-01-15 00:00:00,Budget Request,"Subject: Budget Request
+
+We are requesting an additional budget of \$50,000 for the data analysis initiative.","Hi Taylor! Hope you're doing well!
+I really wish I could, but on this occasion. I'm excited to say that let me know if you need anything else!
+Take care!
+Carol",REJECT
+eve_0001,eve,2024-01-15 00:00:00,Budget Request,"Subject: Budget Request
+
+We are requesting an additional budget of \$50,000 for the stakeholder alignment initiative.","Hello Taylor,
+Based on the data, this is not advisable on this occasion. It should be noted that I will review all relevant parameters.
+Analytically yours,
+Eve",REJECT
+bob_0002,bob,2024-01-16 00:00:00,Event Attendance,"Subject: Event Attendance
+
+Please confirm your attendance at the client onboarding event scheduled for next quarter.","Hey Casey,
+Yeah, sounds good with your request. Just so you know, please do not hesitate to reach out.
+Later,
+Bob",ACCEPT
+dave_0002,dave,2024-01-16 00:00:00,Vendor Proposal,"Subject: Vendor Proposal
+
+Our company would like to offer API integration services at \$50,000/month.","Hi,
+Can't. on this occasion.
+Dave",REJECT
+alice_0004,alice,2024-01-17 00:00:00,Meeting Request,"Subject: Meeting Request
+
+Hi, could we schedule a technical documentation meeting next week? It should only take about 30 minutes.","Hello Taylor,
+I would be happy to with your request. Please note that please do not hesitate to reach out.
+Sincerely,
+Alice",ACCEPT
+eve_0002,eve,2024-01-17 00:00:00,Partnership Proposal,"Subject: Partnership Proposal
+
+We'd like to explore a potential partnership around security audit. What are your thoughts?","Hello Alex,
+The data is inconclusive at this stage before giving a final answer. Furthermore, I will review all relevant parameters.
+Regards,
+Eve",MAYBE
+bob_0003,bob,2024-01-19 00:00:00,Budget Request,"Subject: Budget Request
+
+We are requesting an additional budget of \$2,500 for the data analysis initiative.","Hi Riley,
+No can do on this occasion. Also, please do not hesitate to reach out.
+Thanks,
+Bob",REJECT
+carol_0004,carol,2024-01-19 00:00:00,Meeting Request,"Subject: Meeting Request
+
+Hi, could we schedule a stakeholder alignment meeting next week? It should only take about 60 minutes.","Hello Quinn! Great to hear from you!
+That sounds wonderful with your request. I'm excited to say that let me know if you need anything else!
+Take care!
+Carol",ACCEPT
+alice_0005,alice,2024-01-22 00:00:00,Budget Request,"Subject: Budget Request
+
+We are requesting an additional budget of \$5,000 for the product launch initiative.","Dear Taylor,
+I regret to inform you on this occasion. I would like to inform you that please do not hesitate to reach out.
+Kind regards,
+Alice",REJECT
+dave_0003,dave,2024-01-22 00:00:00,Policy Update,"Subject: Policy Update
+
+The hiring pipeline policy needs updating. Can we discuss revisions next quarter?","Hi,
+Defer. until we have more clarity.
+-Dave",DEFER
+eve_0003,eve,2024-01-22 00:00:00,Contract Renewal,"Subject: Contract Renewal
+
+Your data analysis contract expires this Friday. Shall we discuss renewal terms?","Dear Riley,
+I recommend deferring pending additional data until we have more clarity. Furthermore, I will review all relevant parameters.
+Regards,
+Eve",DEFER
+carol_0005,carol,2024-01-23 00:00:00,Contract Renewal,"Subject: Contract Renewal
+
+Your API integration contract expires next week. Shall we discuss renewal terms?","Hello Casey! Great to hear from you!
+Can we come back to this soon? until we have more clarity. On top of that, let me know if you need anything else!
+Warmly,
+Carol",DEFER
+bob_0004,bob,2024-01-24 00:00:00,Policy Update,"Subject: Policy Update
+
+The performance review policy needs updating. Can we discuss revisions next quarter?","Yo Sam,
+Can we deal with this later? until we have more clarity. btw, please do not hesitate to reach out.
+Thanks,
+Bob",DEFER
+eve_0004,eve,2024-01-24 00:00:00,Policy Change,"Subject: Policy Change
+
+We propose changing the sprint planning policy to allow remote-first policies. Do you approve?","Hello Casey,
+The risk-benefit analysis does not support this on this occasion. Considering the data, I will review all relevant parameters.
+Best,
+Eve",REJECT
+dave_0004,dave,2024-01-25 00:00:00,Contract Renewal,"Subject: Contract Renewal
+
+Your stakeholder alignment contract expires end of month. Shall we discuss renewal terms?","Casey -
+Later. until we have more clarity.
+-Dave",DEFER
+alice_0006,alice,2024-01-29 00:00:00,Technical Question,"Subject: Technical Question
+
+We're experiencing issues with product launch. Could you advise?","Dear Quinn,
+I would require further clarification before I can proceed. In addition, please do not hesitate to reach out.
+Sincerely,
+Alice",REQUEST_MORE_INFORMATION
+bob_0005,bob,2024-01-29 00:00:00,Policy Change,"Subject: Policy Change
+
+We propose changing the marketing strategy policy to allow optional attendance. Do you approve?","Hey Taylor,
+Nope, can't do that on this occasion. Just so you know, please do not hesitate to reach out.
+Cheers,
+Bob",REJECT
+carol_0006,carol,2024-01-29 00:00:00,Webinar Registration,"Subject: Webinar Registration
+
+Would you like to register for the client onboarding webinar on next week?","Hi Quinn! Hope you're doing well!
+I'd love to with your request. On top of that, let me know if you need anything else!
+Take care!
+Carol",ACCEPT
+dave_0005,dave,2024-01-29 00:00:00,Vendor Proposal,"Subject: Vendor Proposal
+
+Our company would like to offer customer feedback services at \$10,000/month.","Jordan -
+No. on this occasion.
+-Dave",REJECT
+eve_0005,eve,2024-01-29 00:00:00,Partnership Proposal,"Subject: Partnership Proposal
+
+We'd like to explore a potential partnership around customer feedback. What are your thoughts?","Dear Jordan,
+Further analysis is required before giving a final answer. Considering the data, I will review all relevant parameters.
+Regards,
+Eve",MAYBE
+bob_0006,bob,2024-02-01 00:00:00,Ambiguous Follow-up,"Subject: Ambiguous Follow-up
+
+Following up on our previous discussion about hiring pipeline.","Hi Quinn,
+What's the deal with before I can proceed. FYI, please do not hesitate to reach out.
+Later,
+Bob",REQUEST_MORE_INFORMATION
+carol_0007,carol,2024-02-01 00:00:00,Contract Renewal,"Subject: Contract Renewal
+
+Your sprint planning contract expires next Tuesday at 3pm. Shall we discuss renewal terms?","Hello Quinn! Great to hear from you!
+Can we come back to this soon? until we have more clarity. I'm excited to say that let me know if you need anything else!
+Warmly,
+Carol",DEFER
+dave_0006,dave,2024-02-02 00:00:00,Partnership Proposal,"Subject: Partnership Proposal
+
+We'd like to explore a potential partnership around team building. What are your thoughts?","Uncertain. before giving a final answer.
+-Dave",MAYBE
+eve_0006,eve,2024-02-02 00:00:00,Strategy Review,"Subject: Strategy Review
+
+We're considering a new strategy for product launch. Would you be open to discussing it?","Dear Alex,
+The data is inconclusive at this stage before giving a final answer. It should be noted that I will review all relevant parameters.
+Regards,
+Eve",MAYBE
+alice_0007,alice,2024-02-05 00:00:00,Vague Request,"Subject: Vague Request
+
+Can you help us with roadmap prioritization? It would be greatly appreciated.","Hello Casey,
+I would require further clarification before I can proceed. Please note that please do not hesitate to reach out.
+Sincerely,
+Alice",REQUEST_MORE_INFORMATION
+bob_0007,bob,2024-02-05 00:00:00,Contract Renewal,"Subject: Contract Renewal
+
+Your security audit contract expires tomorrow. Shall we discuss renewal terms?","Hey Sam,
+Let's table this for now until we have more clarity. FYI, please do not hesitate to reach out.
+Later,
+Bob",DEFER
+carol_0008,carol,2024-02-05 00:00:00,Optional Workshop,"Subject: Optional Workshop
+
+There's an optional security audit workshop happening tomorrow. Would you like to join?","Hi Riley! Hope you're doing well!
+Maybe! I'll get back to you before giving a final answer. Also, let me know if you need anything else!
+Talk soon!
+Carol",MAYBE
+dave_0007,dave,2024-02-05 00:00:00,New Contact,"Subject: New Contact
+
+Hi, I'm Quinn from InnovateLtd. I wanted to connect regarding roadmap prioritization.","Hi,
+What's the context? before I can proceed.
+Dave",REQUEST_MORE_INFORMATION
+eve_0007,eve,2024-02-05 00:00:00,Annual Review,"Subject: Annual Review
+
+It's time for the annual customer feedback review. Can we schedule this?","Hello Taylor,
+I recommend deferring pending additional data until we have more clarity. It should be noted that I will review all relevant parameters.
+Regards,
+Eve",DEFER
+eve_0008,eve,2024-02-07 00:00:00,Technical Question,"Subject: Technical Question
+
+We're experiencing issues with user research. Could you advise?","Hello Sam,
+Please provide quantitative details on before I can proceed. It should be noted that I will review all relevant parameters.
+Regards,
+Eve",REQUEST_MORE_INFORMATION
+alice_0008,alice,2024-02-08 00:00:00,Strategy Review,"Subject: Strategy Review
+
+We're considering a new strategy for compliance review. Would you be open to discussing it?","Dear Jordan,
+I will review and revert before giving a final answer. Furthermore, please do not hesitate to reach out.
+Sincerely,
+Alice",MAYBE
+carol_0009,carol,2024-02-08 00:00:00,Event Attendance,"Subject: Event Attendance
+
+Please confirm your attendance at the product launch event scheduled for next Tuesday at 3pm.","Hello Riley! Great to hear from you!
+Absolutely, I'm in with your request. Great news — let me know if you need anything else!
+Warmly,
+Carol",ACCEPT
+alice_0009,alice,2024-02-12 00:00:00,Resource Request,"Subject: Resource Request
+
+Can we borrow the design team for the API integration project?","Dear Quinn,
+I am unable to proceed on this occasion. In addition, please do not hesitate to reach out.
+Best regards,
+Alice",REJECT
+bob_0008,bob,2024-02-12 00:00:00,Ambiguous Follow-up,"Subject: Ambiguous Follow-up
+
+Following up on our previous discussion about product launch.","Hey Quinn,
+Can you explain before I can proceed. Just so you know, please do not hesitate to reach out.
+Later,
+Bob",REQUEST_MORE_INFORMATION
+carol_0010,carol,2024-02-12 00:00:00,Invitation,"Subject: Invitation
+
+You are invited to join our security audit committee. Would you be available to participate?","Hi Casey! Hope you're doing well!
+I'd love to with your request. Great news — let me know if you need anything else!
+Talk soon!
+Carol",ACCEPT
+dave_0008,dave,2024-02-12 00:00:00,Meeting Request,"Subject: Meeting Request
+
+Hi, could we schedule a Q3 planning meeting next Tuesday at 3pm? It should only take about 45 minutes.","Hi,
+Fine. with your request.
+-Dave",ACCEPT
+eve_0009,eve,2024-02-12 00:00:00,New Initiative,"Subject: New Initiative
+
+We're thinking of launching a cost optimization initiative. Does this interest you?","Hello Quinn,
+The data is inconclusive at this stage before giving a final answer. Considering the data, I will review all relevant parameters.
+Analytically yours,
+Eve",MAYBE
+dave_0009,dave,2024-02-14 00:00:00,Optional Workshop,"Subject: Optional Workshop
+
+There's an optional user research workshop happening this Friday. Would you like to join?","Quinn -
+Uncertain. before giving a final answer.
+Dave",MAYBE
+eve_0010,eve,2024-02-14 00:00:00,Meeting Request,"Subject: Meeting Request
+
+Hi, could we schedule a product launch meeting next Monday? It should only take about 60 minutes.","Dear Jordan,
+Based on the available information, I concur with your request. It should be noted that I will review all relevant parameters.
+Regards,
+Eve",ACCEPT
+alice_0010,alice,2024-02-16 00:00:00,Invitation,"Subject: Invitation
+
+You are invited to join our customer feedback committee. Would you be available to participate?","Hello Morgan,
+Certainly, I can accommodate with your request. In addition, please do not hesitate to reach out.
+Sincerely,
+Alice",ACCEPT
+bob_0009,bob,2024-02-16 00:00:00,Long-term Planning,"Subject: Long-term Planning
+
+We need to finalize the team building roadmap for next year. Can you review it?","Hi Jordan,
+Let's table this for now until we have more clarity. Just so you know, please do not hesitate to reach out.
+Cheers,
+Bob",DEFER
+dave_0010,dave,2024-02-16 00:00:00,Task Assignment,"Subject: Task Assignment
+
+Can you take on the marketing strategy task? It needs to be done by next week.","Hi,
+Agreed. with your request.
+Regards, Dave",ACCEPT
+alice_0011,alice,2024-02-19 00:00:00,Strategy Review,"Subject: Strategy Review
+
+We're considering a new strategy for Q3 planning. Would you be open to discussing it?","Dear Alex,
+I will review and revert before giving a final answer. In addition, please do not hesitate to reach out.
+Best regards,
+Alice",MAYBE
+bob_0010,bob,2024-02-19 00:00:00,Scope Expansion,"Subject: Scope Expansion
+
+We want to expand the scope of security audit to include a new reporting module. Please approve.","Hey Alex,
+Nope, can't do that on this occasion. Just so you know, please do not hesitate to reach out.
+Thanks,
+Bob",REJECT
+carol_0011,carol,2024-02-19 00:00:00,Meeting Request,"Subject: Meeting Request
+
+Hi, could we schedule a budget allocation meeting next Monday? It should only take about 60 minutes.","Hello Alex! Great to hear from you!
+Absolutely, I'm in with your request. I'm excited to say that let me know if you need anything else!
+Warmly,
+Carol",ACCEPT
+dave_0011,dave,2024-02-19 00:00:00,Invitation,"Subject: Invitation
+
+You are invited to join our stakeholder alignment committee. Would you be available to participate?","Hi,
+Fine. with your request.
+Regards, Dave",ACCEPT
+eve_0011,eve,2024-02-19 00:00:00,Scope Expansion,"Subject: Scope Expansion
+
+We want to expand the scope of data analysis to include international markets. Please approve.","Hello Quinn,
+Based on the data, this is not advisable on this occasion. Furthermore, I will review all relevant parameters.
+Analytically yours,
+Eve",REJECT
+eve_0012,eve,2024-02-22 00:00:00,Partnership Proposal,"Subject: Partnership Proposal
+
+We'd like to explore a potential partnership around customer feedback. What are your thoughts?","Hello Riley,
+A conditional acceptance depends on before giving a final answer. Furthermore, I will review all relevant parameters.
+Analytically yours,
+Eve",MAYBE
+alice_0012,alice,2024-02-23 00:00:00,New Initiative,"Subject: New Initiative
+
+We're thinking of launching a sprint planning initiative. Does this interest you?","Dear Morgan,
+I shall consider this before giving a final answer. Furthermore, please do not hesitate to reach out.
+Sincerely,
+Alice",MAYBE
+bob_0011,bob,2024-02-23 00:00:00,Task Assignment,"Subject: Task Assignment
+
+Can you take on the roadmap prioritization task? It needs to be done by next week.","Yo Alex,
+Yeah, sounds good with your request. btw, please do not hesitate to reach out.
+Later,
+Bob",ACCEPT
+carol_0012,carol,2024-02-23 00:00:00,Policy Change,"Subject: Policy Change
+
+We propose changing the stakeholder alignment policy to allow self-paced learning. Do you approve?","Hello Casey! Great to hear from you!
+I'm so sorry, but I can't on this occasion. Great news — let me know if you need anything else!
+Warmly,
+Carol",REJECT
+dave_0012,dave,2024-02-26 00:00:00,Event Attendance,"Subject: Event Attendance
+
+Please confirm your attendance at the user research event scheduled for next quarter.","Alex -
+Yes. with your request.
+Dave",ACCEPT
+eve_0013,eve,2024-02-26 00:00:00,Invitation,"Subject: Invitation
+
+You are invited to join our performance review committee. Would you be available to participate?","Hello Quinn,
+The evidence supports proceeding with your request. From an analytical standpoint, I will review all relevant parameters.
+Regards,
+Eve",ACCEPT
+alice_0013,alice,2024-02-28 00:00:00,Policy Update,"Subject: Policy Update
+
+The user research policy needs updating. Can we discuss revisions next quarter?","Hello Riley,
+I propose we defer this matter until we have more clarity. Please note that please do not hesitate to reach out.
+Best regards,
+Alice",DEFER
+bob_0012,bob,2024-02-28 00:00:00,Meeting Request,"Subject: Meeting Request
+
+Hi, could we schedule a sprint planning meeting next quarter? It should only take about 45 minutes.","Yo Morgan,
+Totally fine with that with your request. Just so you know, please do not hesitate to reach out.
+Thanks,
+Bob",ACCEPT
+carol_0013,carol,2024-02-28 00:00:00,Policy Update,"Subject: Policy Update
+
+The sprint planning policy needs updating. Can we discuss revisions next quarter?","Hi Quinn! Hope you're doing well!
+Can we come back to this soon? until we have more clarity. I'm excited to say that let me know if you need anything else!
+Take care!
+Carol",DEFER
+eve_0014,eve,2024-03-01 00:00:00,Webinar Registration,"Subject: Webinar Registration
+
+Would you like to register for the budget allocation webinar on next week?","Dear Alex,
+The evidence supports proceeding with your request. It should be noted that I will review all relevant parameters.
+Regards,
+Eve",ACCEPT
+alice_0014,alice,2024-03-04 00:00:00,New Initiative,"Subject: New Initiative
+
+We're thinking of launching a roadmap prioritization initiative. Does this interest you?","Hello Alex,
+This requires further thought before giving a final answer. In addition, please do not hesitate to reach out.
+Best regards,
+Alice",MAYBE
+bob_0013,bob,2024-03-04 00:00:00,Invitation,"Subject: Invitation
+
+You are invited to join our client onboarding committee. Would you be available to participate?","Yo Riley,
+Totally fine with that with your request. Just so you know, please do not hesitate to reach out.
+Cheers,
+Bob",ACCEPT
+carol_0014,carol,2024-03-04 00:00:00,Budget Request,"Subject: Budget Request
+
+We are requesting an additional budget of \$5,000 for the team building initiative.","Hi Jordan! Hope you're doing well!
+Unfortunately I'll have to pass on this occasion. Great news — let me know if you need anything else!
+Take care!
+Carol",REJECT
+dave_0013,dave,2024-03-04 00:00:00,Contract Renewal,"Subject: Contract Renewal
+
+Your data analysis contract expires this Thursday morning. Shall we discuss renewal terms?","Defer. until we have more clarity.
+Regards, Dave",DEFER
+eve_0015,eve,2024-03-06 00:00:00,Event Attendance,"Subject: Event Attendance
+
+Please confirm your attendance at the compliance review event scheduled for next quarter.","Dear Morgan,
+Based on the available information, I concur with your request. From an analytical standpoint, I will review all relevant parameters.
+Best,
+Eve",ACCEPT
+bob_0014,bob,2024-03-07 00:00:00,Long-term Planning,"Subject: Long-term Planning
+
+We need to finalize the customer feedback roadmap for next year. Can you review it?","Hi Quinn,
+Can we deal with this later? until we have more clarity. btw, please do not hesitate to reach out.
+Thanks,
+Bob",DEFER
+carol_0015,carol,2024-03-07 00:00:00,New Initiative,"Subject: New Initiative
+
+We're thinking of launching a team building initiative. Does this interest you?","Hello Casey! Great to hear from you!
+Hmm, I'm not sure yet! before giving a final answer. Great news — let me know if you need anything else!
+Talk soon!
+Carol",MAYBE
+alice_0015,alice,2024-03-08 00:00:00,Long-term Planning,"Subject: Long-term Planning
+
+We need to finalize the client onboarding roadmap for next year. Can you review it?","Hello Alex,
+I propose we defer this matter until we have more clarity. In addition, please do not hesitate to reach out.
+Sincerely,
+Alice",DEFER
+bob_0015,bob,2024-03-11 00:00:00,Scope Expansion,"Subject: Scope Expansion
+
+We want to expand the scope of stakeholder alignment to include additional features. Please approve.","Hey Quinn,
+No can do on this occasion. FYI, please do not hesitate to reach out.
+Cheers,
+Bob",REJECT
+carol_0016,carol,2024-03-11 00:00:00,Collaboration Request,"Subject: Collaboration Request
+
+We'd love to collaborate with you on the performance review project. Are you interested?","Hi Taylor! Hope you're doing well!
+That sounds wonderful with your request. Great news — let me know if you need anything else!
+Take care!
+Carol",ACCEPT
+dave_0014,dave,2024-03-11 00:00:00,Invitation,"Subject: Invitation
+
+You are invited to join our performance review committee. Would you be available to participate?","Fine. with your request.
+Dave",ACCEPT
+eve_0016,eve,2024-03-11 00:00:00,Collaboration Request,"Subject: Collaboration Request
+
+We'd love to collaborate with you on the client onboarding project. Are you interested?","Hello Riley,
+The evidence supports proceeding with your request. From an analytical standpoint, I will review all relevant parameters.
+Regards,
+Eve",ACCEPT
+alice_0016,alice,2024-03-13 00:00:00,Event Attendance,"Subject: Event Attendance
+
+Please confirm your attendance at the cost optimization event scheduled for next quarter.","Dear Alex,
+I would be happy to with your request. Furthermore, please do not hesitate to reach out.
+Sincerely,
+Alice",ACCEPT
+dave_0015,dave,2024-03-13 00:00:00,New Initiative,"Subject: New Initiative
+
+We're thinking of launching a technical documentation initiative. Does this interest you?","Possibly. before giving a final answer.
+-Dave",MAYBE
+eve_0017,eve,2024-03-15 00:00:00,Policy Change,"Subject: Policy Change
+
+We propose changing the client onboarding policy to allow self-paced learning. Do you approve?","Dear Alex,
+Based on the data, this is not advisable on this occasion. From an analytical standpoint, I will review all relevant parameters.
+Analytically yours,
+Eve",REJECT
+alice_0017,alice,2024-03-18 00:00:00,Resource Request,"Subject: Resource Request
+
+Can we borrow the testing environment for the API integration project?","Hello Quinn,
+I am unable to proceed on this occasion. I would like to inform you that please do not hesitate to reach out.
+Sincerely,
+Alice",REJECT
+bob_0016,bob,2024-03-18 00:00:00,Invitation,"Subject: Invitation
+
+You are invited to join our performance review committee. Would you be available to participate?","Hey Sam,
+Yeah, sounds good with your request. Also, please do not hesitate to reach out.
+Thanks,
+Bob",ACCEPT
+carol_0017,carol,2024-03-18 00:00:00,Webinar Registration,"Subject: Webinar Registration
+
+Would you like to register for the customer feedback webinar on next week?","Hi Taylor! Hope you're doing well!
+I'd love to with your request. On top of that, let me know if you need anything else!
+Warmly,
+Carol",ACCEPT
+dave_0016,dave,2024-03-18 00:00:00,Ambiguous Follow-up,"Subject: Ambiguous Follow-up
+
+Following up on our previous discussion about budget allocation.","Quinn -
+More info needed. before I can proceed.
+-Dave",REQUEST_MORE_INFORMATION
+eve_0018,eve,2024-03-18 00:00:00,Strategy Review,"Subject: Strategy Review
+
+We're considering a new strategy for budget allocation. Would you be open to discussing it?","Hello Riley,
+A conditional acceptance depends on before giving a final answer. It should be noted that I will review all relevant parameters.
+Analytically yours,
+Eve",MAYBE
+alice_0018,alice,2024-03-20 00:00:00,Contract Renewal,"Subject: Contract Renewal
+
+Your marketing strategy contract expires end of month. Shall we discuss renewal terms?","Hello Taylor,
+Let us revisit this at a later date until we have more clarity. In addition, please do not hesitate to reach out.
+Kind regards,
+Alice",DEFER
+bob_0017,bob,2024-03-21 00:00:00,Vendor Proposal,"Subject: Vendor Proposal
+
+Our company would like to offer compliance review services at \$5,000/month.","Hi Casey,
+Nope, can't do that on this occasion. Just so you know, please do not hesitate to reach out.
+Later,
+Bob",REJECT
+carol_0018,carol,2024-03-21 00:00:00,Meeting Request,"Subject: Meeting Request
+
+Hi, could we schedule a sprint planning meeting this Thursday morning? It should only take about 60 minutes.","Hello Jordan! Great to hear from you!
+I'd love to with your request. Great news — let me know if you need anything else!
+Warmly,
+Carol",ACCEPT
+dave_0017,dave,2024-03-22 00:00:00,Technical Question,"Subject: Technical Question
+
+We're experiencing issues with marketing strategy. Could you advise?","Need details. before I can proceed.
+-Dave",REQUEST_MORE_INFORMATION
+eve_0019,eve,2024-03-22 00:00:00,Collaboration Request,"Subject: Collaboration Request
+
+We'd love to collaborate with you on the security audit project. Are you interested?","Dear Casey,
+The evidence supports proceeding with your request. From an analytical standpoint, I will review all relevant parameters.
+Best,
+Eve",ACCEPT
+alice_0019,alice,2024-03-25 00:00:00,Event Attendance,"Subject: Event Attendance
+
+Please confirm your attendance at the Q3 planning event scheduled for next Tuesday at 3pm.","Hello Taylor,
+I would be happy to with your request. Please note that please do not hesitate to reach out.
+Best regards,
+Alice",ACCEPT
+bob_0018,bob,2024-03-25 00:00:00,Long-term Planning,"Subject: Long-term Planning
+
+We need to finalize the client onboarding roadmap for next year. Can you review it?","Hey Morgan,
+Let's table this for now until we have more clarity. Just so you know, please do not hesitate to reach out.
+Thanks,
+Bob",DEFER
+carol_0019,carol,2024-03-25 00:00:00,Strategy Review,"Subject: Strategy Review
+
+We're considering a new strategy for data analysis. Would you be open to discussing it?","Hello Riley! Great to hear from you!
+Let me think it over before giving a final answer. On top of that, let me know if you need anything else!
+Take care!
+Carol",MAYBE
+eve_0020,eve,2024-03-25 00:00:00,Annual Review,"Subject: Annual Review
+
+It's time for the annual roadmap prioritization review. Can we schedule this?","Dear Quinn,
+I recommend deferring pending additional data until we have more clarity. Considering the data, I will review all relevant parameters.
+Best,
+Eve",DEFER
+dave_0018,dave,2024-03-26 00:00:00,Long-term Planning,"Subject: Long-term Planning
+
+We need to finalize the API integration roadmap for next year. Can you review it?","Morgan -
+Not now. until we have more clarity.
+Regards, Dave",DEFER
+bob_0019,bob,2024-03-28 00:00:00,Long-term Planning,"Subject: Long-term Planning
+
+We need to finalize the vendor evaluation roadmap for next year. Can you review it?","Yo Alex,
+Let's table this for now until we have more clarity. FYI, please do not hesitate to reach out.
+Thanks,
+Bob",DEFER
+carol_0020,carol,2024-03-28 00:00:00,Policy Update,"Subject: Policy Update
+
+The marketing strategy policy needs updating. Can we discuss revisions next quarter?","Hi Morgan! Hope you're doing well!
+I'd love to revisit this another time until we have more clarity. Great news — let me know if you need anything else!
+Warmly,
+Carol",DEFER
+dave_0019,dave,2024-03-28 00:00:00,Policy Change,"Subject: Policy Change
+
+We propose changing the security audit policy to allow optional attendance. Do you approve?","Casey -
+Declined. on this occasion.
+Regards, Dave",REJECT
+alice_0020,alice,2024-03-29 00:00:00,Budget Request,"Subject: Budget Request
+
+We are requesting an additional budget of \$15,000 for the compliance review initiative.","Hello Sam,
+Unfortunately, I must decline on this occasion. In addition, please do not hesitate to reach out.
+Sincerely,
+Alice",REJECT
+alice_0021,alice,2024-04-01 00:00:00,Collaboration Request,"Subject: Collaboration Request
+
+We'd love to collaborate with you on the API integration project. Are you interested?","Hello Morgan,
+Certainly, I can accommodate with your request. Furthermore, please do not hesitate to reach out.
+Kind regards,
+Alice",ACCEPT
+bob_0020,bob,2024-04-01 00:00:00,Optional Workshop,"Subject: Optional Workshop
+
+There's an optional security audit workshop happening tomorrow. Would you like to join?","Yo Sam,
+Not sure yet before giving a final answer. Also, please do not hesitate to reach out.
+Later,
+Bob",MAYBE
+carol_0021,carol,2024-04-01 00:00:00,Budget Request,"Subject: Budget Request
+
+We are requesting an additional budget of \$15,000 for the API integration initiative.","Hello Jordan! Great to hear from you!
+Unfortunately I'll have to pass on this occasion. I'm excited to say that let me know if you need anything else!
+Warmly,
+Carol",REJECT
+dave_0020,dave,2024-04-01 00:00:00,Ambiguous Follow-up,"Subject: Ambiguous Follow-up
+
+Following up on our previous discussion about technical documentation.","Hi,
+Need details. before I can proceed.
+Regards, Dave",REQUEST_MORE_INFORMATION
+eve_0021,eve,2024-04-01 00:00:00,Optional Workshop,"Subject: Optional Workshop
+
+There's an optional client onboarding workshop happening next sprint. Would you like to join?","Hello Alex,
+The data is inconclusive at this stage before giving a final answer. From an analytical standpoint, I will review all relevant parameters.
+Best,
+Eve",MAYBE
+alice_0022,alice,2024-04-03 00:00:00,Technical Question,"Subject: Technical Question
+
+We're experiencing issues with compliance review. Could you advise?","Dear Taylor,
+Could you kindly provide additional details before I can proceed. Please note that please do not hesitate to reach out.
+Kind regards,
+Alice",REQUEST_MORE_INFORMATION
+bob_0021,bob,2024-04-03 00:00:00,Strategy Review,"Subject: Strategy Review
+
+We're considering a new strategy for sprint planning. Would you be open to discussing it?","Yo Quinn,
+Maybe, let me think before giving a final answer. btw, please do not hesitate to reach out.
+Later,
+Bob",MAYBE
+carol_0022,carol,2024-04-03 00:00:00,Vendor Proposal,"Subject: Vendor Proposal
+
+Our company would like to offer compliance review services at \$5,000/month.","Hello Jordan! Great to hear from you!
+I really wish I could, but on this occasion. I'm excited to say that let me know if you need anything else!
+Talk soon!
+Carol",REJECT
+dave_0021,dave,2024-04-03 00:00:00,Vendor Proposal,"Subject: Vendor Proposal
+
+Our company would like to offer compliance review services at \$5,000/month.","Hi,
+No. on this occasion.
+Dave",REJECT
+bob_0022,bob,2024-04-05 00:00:00,Optional Workshop,"Subject: Optional Workshop
+
+There's an optional security audit workshop happening next sprint. Would you like to join?","Hey Quinn,
+Not sure yet before giving a final answer. Just so you know, please do not hesitate to reach out.
+Later,
+Bob",MAYBE
+carol_0023,carol,2024-04-05 00:00:00,Invitation,"Subject: Invitation
+
+You are invited to join our marketing strategy committee. Would you be available to participate?","Hi Sam! Hope you're doing well!
+That sounds wonderful with your request. On top of that, let me know if you need anything else!
+Warmly,
+Carol",ACCEPT
+dave_0022,dave,2024-04-05 00:00:00,Webinar Registration,"Subject: Webinar Registration
+
+Would you like to register for the API integration webinar on next week?","Hi,
+Agreed. with your request.
+-Dave",ACCEPT
+eve_0022,eve,2024-04-05 00:00:00,Partnership Proposal,"Subject: Partnership Proposal
+
+We'd like to explore a potential partnership around marketing strategy. What are your thoughts?","Dear Alex,
+Further analysis is required before giving a final answer. Furthermore, I will review all relevant parameters.
+Best,
+Eve",MAYBE
+alice_0023,alice,2024-04-08 00:00:00,Vendor Proposal,"Subject: Vendor Proposal
+
+Our company would like to offer budget allocation services at \$15,000/month.","Hello Sam,
+I am unable to proceed on this occasion. I would like to inform you that please do not hesitate to reach out.
+Sincerely,
+Alice",REJECT
+dave_0023,dave,2024-04-08 00:00:00,Optional Workshop,"Subject: Optional Workshop
+
+There's an optional hiring pipeline workshop happening next sprint. Would you like to join?","Hi,
+Possibly. before giving a final answer.
+Dave",MAYBE
+eve_0023,eve,2024-04-09 00:00:00,Policy Update,"Subject: Policy Update
+
+The client onboarding policy needs updating. Can we discuss revisions next quarter?","Dear Riley,
+This decision should be postponed for analysis until we have more clarity. From an analytical standpoint, I will review all relevant parameters.
+Analytically yours,
+Eve",DEFER
+bob_0023,bob,2024-04-10 00:00:00,Ambiguous Follow-up,"Subject: Ambiguous Follow-up
+
+Following up on our previous discussion about roadmap prioritization.","Hey Casey,
+Can you explain before I can proceed. Just so you know, please do not hesitate to reach out.
+Cheers,
+Bob",REQUEST_MORE_INFORMATION
+carol_0024,carol,2024-04-10 00:00:00,Strategy Review,"Subject: Strategy Review
+
+We're considering a new strategy for technical documentation. Would you be open to discussing it?","Hello Taylor! Great to hear from you!
+Hmm, I'm not sure yet! before giving a final answer. On top of that, let me know if you need anything else!
+Take care!
+Carol",MAYBE
+dave_0024,dave,2024-04-10 00:00:00,Meeting Request,"Subject: Meeting Request
+
+Hi, could we schedule a data analysis meeting next quarter? It should only take about 60 minutes.","Riley -
+Yes. with your request.
+Regards, Dave",ACCEPT
+alice_0024,alice,2024-04-11 00:00:00,New Initiative,"Subject: New Initiative
+
+We're thinking of launching a hiring pipeline initiative. Does this interest you?","Dear Sam,
+I shall consider this before giving a final answer. In addition, please do not hesitate to reach out.
+Kind regards,
+Alice",MAYBE
+dave_0025,dave,2024-04-12 00:00:00,Invitation,"Subject: Invitation
+
+You are invited to join our Q3 planning committee. Would you be available to participate?","Fine. with your request.
+Regards, Dave",ACCEPT
+bob_0024,bob,2024-04-15 00:00:00,Scope Expansion,"Subject: Scope Expansion
+
+We want to expand the scope of technical documentation to include mobile support. Please approve.","Yo Casey,
+Nope, can't do that on this occasion. btw, please do not hesitate to reach out.
+Thanks,
+Bob",REJECT
+carol_0025,carol,2024-04-15 00:00:00,Resource Request,"Subject: Resource Request
+
+Can we borrow two developers for the cost optimization project?","Hello Morgan! Great to hear from you!
+I'm so sorry, but I can't on this occasion. On top of that, let me know if you need anything else!
+Warmly,
+Carol",REJECT
+dave_0026,dave,2024-04-15 00:00:00,Event Attendance,"Subject: Event Attendance
+
+Please confirm your attendance at the performance review event scheduled for next Monday.","Jordan -
+Agreed. with your request.
+Dave",ACCEPT
+eve_0024,eve,2024-04-15 00:00:00,Long-term Planning,"Subject: Long-term Planning
+
+We need to finalize the security audit roadmap for next year. Can you review it?","Hello Quinn,
+I recommend deferring pending additional data until we have more clarity. It should be noted that I will review all relevant parameters.
+Best,
+Eve",DEFER
+alice_0025,alice,2024-04-16 00:00:00,Scope Expansion,"Subject: Scope Expansion
+
+We want to expand the scope of client onboarding to include additional features. Please approve.","Hello Riley,
+Unfortunately, I must decline on this occasion. Please note that please do not hesitate to reach out.
+Kind regards,
+Alice",REJECT
+eve_0025,eve,2024-04-17 00:00:00,Collaboration Request,"Subject: Collaboration Request
+
+We'd love to collaborate with you on the budget allocation project. Are you interested?","Hello Morgan,
+Based on the available information, I concur with your request. Furthermore, I will review all relevant parameters.
+Regards,
+Eve",ACCEPT
+bob_0025,bob,2024-04-18 00:00:00,New Contact,"Subject: New Contact
+
+Hi, I'm Taylor from TechCorp. I wanted to connect regarding user research.","Hi Casey,
+What's the deal with before I can proceed. btw, please do not hesitate to reach out.
+Cheers,
+Bob",REQUEST_MORE_INFORMATION
+carol_0026,carol,2024-04-18 00:00:00,Vague Request,"Subject: Vague Request
+
+Can you help us with cost optimization? It would be greatly appreciated.","Hello Quinn! Great to hear from you!
+I'd love to know more about before I can proceed. I'm excited to say that let me know if you need anything else!
+Warmly,
+Carol",REQUEST_MORE_INFORMATION
+alice_0026,alice,2024-04-19 00:00:00,Collaboration Request,"Subject: Collaboration Request
+
+We'd love to collaborate with you on the user research project. Are you interested?","Hello Taylor,
+I am pleased to confirm with your request. Please note that please do not hesitate to reach out.
+Best regards,
+Alice",ACCEPT
+dave_0027,dave,2024-04-19 00:00:00,Optional Workshop,"Subject: Optional Workshop
+
+There's an optional vendor evaluation workshop happening next sprint. Would you like to join?","Morgan -
+TBD. before giving a final answer.
+Dave",MAYBE
+eve_0026,eve,2024-04-19 00:00:00,Event Attendance,"Subject: Event Attendance
+
+Please confirm your attendance at the product launch event scheduled for this Friday.","Hello Taylor,
+Based on the available information, I concur with your request. From an analytical standpoint, I will review all relevant parameters.
+Analytically yours,
+Eve",ACCEPT
+alice_0027,alice,2024-04-22 00:00:00,Annual Review,"Subject: Annual Review
+
+It's time for the annual client onboarding review. Can we schedule this?","Dear Jordan,
+Let us revisit this at a later date until we have more clarity. I would like to inform you that please do not hesitate to reach out.
+Sincerely,
+Alice",DEFER
+bob_0026,bob,2024-04-22 00:00:00,Task Assignment,"Subject: Task Assignment
+
+Can you take on the customer feedback task? It needs to be done by tomorrow.","Hey Quinn,
+Totally fine with that with your request. Just so you know, please do not hesitate to reach out.
+Thanks,
+Bob",ACCEPT
+carol_0027,carol,2024-04-22 00:00:00,Invitation,"Subject: Invitation
+
+You are invited to join our customer feedback committee. Would you be available to participate?","Hello Taylor! Great to hear from you!
+That sounds wonderful with your request. Great news — let me know if you need anything else!
+Talk soon!
+Carol",ACCEPT
+eve_0027,eve,2024-04-22 00:00:00,Policy Change,"Subject: Policy Change
+
+We propose changing the Q3 planning policy to allow remote-first policies. Do you approve?","Dear Taylor,
+Based on the data, this is not advisable on this occasion. It should be noted that I will review all relevant parameters.
+Regards,
+Eve",REJECT
+dave_0028,dave,2024-04-23 00:00:00,New Initiative,"Subject: New Initiative
+
+We're thinking of launching a team building initiative. Does this interest you?","TBD. before giving a final answer.
+-Dave",MAYBE
+alice_0028,alice,2024-04-24 00:00:00,Policy Change,"Subject: Policy Change
+
+We propose changing the vendor evaluation policy to allow flexible deadlines. Do you approve?","Dear Sam,
+I regret to inform you on this occasion. In addition, please do not hesitate to reach out.
+Best regards,
+Alice",REJECT
+carol_0028,carol,2024-04-24 00:00:00,Meeting Request,"Subject: Meeting Request
+
+Hi, could we schedule a marketing strategy meeting this Friday? It should only take about 60 minutes.","Hello Quinn! Great to hear from you!
+I'd love to with your request. Great news — let me know if you need anything else!
+Take care!
+Carol",ACCEPT
+dave_0029,dave,2024-04-25 00:00:00,Technical Question,"Subject: Technical Question
+
+We're experiencing issues with team building. Could you advise?","Jordan -
+More info needed. before I can proceed.
+Dave",REQUEST_MORE_INFORMATION
+alice_0029,alice,2024-04-26 00:00:00,Vague Request,"Subject: Vague Request
+
+Can you help us with client onboarding? It would be greatly appreciated.","Dear Taylor,
+Could you kindly provide additional details before I can proceed. In addition, please do not hesitate to reach out.
+Sincerely,
+Alice",REQUEST_MORE_INFORMATION
+bob_0027,bob,2024-04-26 00:00:00,Technical Question,"Subject: Technical Question
+
+We're experiencing issues with team building. Could you advise?","Hey Sam,
+Can you explain before I can proceed. Also, please do not hesitate to reach out.
+Thanks,
+Bob",REQUEST_MORE_INFORMATION
+alice_0030,alice,2024-04-29 00:00:00,Policy Change,"Subject: Policy Change
+
+We propose changing the technical documentation policy to allow self-paced learning. Do you approve?","Dear Sam,
+I am unable to proceed on this occasion. In addition, please do not hesitate to reach out.
+Best regards,
+Alice",REJECT
+bob_0028,bob,2024-04-29 00:00:00,Unclear Proposal,"Subject: Unclear Proposal
+
+We'd like to move forward with technical documentation. Please confirm your availability.","Yo Jordan,
+Need more info on before I can proceed. btw, please do not hesitate to reach out.
+Thanks,
+Bob",REQUEST_MORE_INFORMATION
+carol_0029,carol,2024-04-29 00:00:00,Invitation,"Subject: Invitation
+
+You are invited to join our Q3 planning committee. Would you be available to participate?","Hi Riley! Hope you're doing well!
+That sounds wonderful with your request. Great news — let me know if you need anything else!
+Warmly,
+Carol",ACCEPT
+eve_0028,eve,2024-04-29 00:00:00,Invitation,"Subject: Invitation
+
+You are invited to join our budget allocation committee. Would you be available to participate?","Hello Alex,
+Based on the available information, I concur with your request. Considering the data, I will review all relevant parameters.
+Regards,
+Eve",ACCEPT
+dave_0030,dave,2024-04-30 00:00:00,Collaboration Request,"Subject: Collaboration Request
+
+We'd love to collaborate with you on the data analysis project. Are you interested?","Riley -
+Yes. with your request.
+Regards, Dave",ACCEPT
+eve_0029,eve,2024-05-01 00:00:00,Collaboration Request,"Subject: Collaboration Request
+
+We'd love to collaborate with you on the marketing strategy project. Are you interested?","Hello Jordan,
+The evidence supports proceeding with your request. Considering the data, I will review all relevant parameters.
+Best,
+Eve",ACCEPT
+bob_0029,bob,2024-05-02 00:00:00,Technical Question,"Subject: Technical Question
+
+We're experiencing issues with sprint planning. Could you advise?","Hi Riley,
+Need more info on before I can proceed. btw, please do not hesitate to reach out.
+Cheers,
+Bob",REQUEST_MORE_INFORMATION
+alice_0031,alice,2024-05-06 00:00:00,Vendor Proposal,"Subject: Vendor Proposal
+
+Our company would like to offer roadmap prioritization services at \$50,000/month.","Hello Morgan,
+Unfortunately, I must decline on this occasion. I would like to inform you that please do not hesitate to reach out.
+Sincerely,
+Alice",REJECT
+carol_0030,carol,2024-05-06 00:00:00,New Initiative,"Subject: New Initiative
+
+We're thinking of launching a budget allocation initiative. Does this interest you?","Hi Alex! Hope you're doing well!
+Hmm, I'm not sure yet! before giving a final answer. Great news — let me know if you need anything else!
+Take care!
+Carol",MAYBE
+dave_0031,dave,2024-05-06 00:00:00,Annual Review,"Subject: Annual Review
+
+It's time for the annual roadmap prioritization review. Can we schedule this?","Later. until we have more clarity.
+Dave",DEFER
+eve_0030,eve,2024-05-06 00:00:00,Webinar Registration,"Subject: Webinar Registration
+
+Would you like to register for the roadmap prioritization webinar on this Thursday morning?","Dear Casey,
+Based on the available information, I concur with your request. From an analytical standpoint, I will review all relevant parameters.
+Analytically yours,
+Eve",ACCEPT
+bob_0030,bob,2024-05-07 00:00:00,Partnership Proposal,"Subject: Partnership Proposal
+
+We'd like to explore a potential partnership around compliance review. What are your thoughts?","Yo Morgan,
+Maybe, let me think before giving a final answer. btw, please do not hesitate to reach out.
+Thanks,
+Bob",MAYBE
+eve_0031,eve,2024-05-09 00:00:00,Budget Request,"Subject: Budget Request
+
+We are requesting an additional budget of \$10,000 for the marketing strategy initiative.","Hello Jordan,
+Based on the data, this is not advisable on this occasion. Considering the data, I will review all relevant parameters.
+Analytically yours,
+Eve",REJECT
+dave_0032,dave,2024-05-10 00:00:00,Policy Change,"Subject: Policy Change
+
+We propose changing the budget allocation policy to allow flexible deadlines. Do you approve?","Alex -
+Declined. on this occasion.
+Dave",REJECT
+alice_0032,alice,2024-05-13 00:00:00,Partnership Proposal,"Subject: Partnership Proposal
+
+We'd like to explore a potential partnership around vendor evaluation. What are your thoughts?","Hello Taylor,
+This requires further thought before giving a final answer. In addition, please do not hesitate to reach out.
+Kind regards,
+Alice",MAYBE
+bob_0031,bob,2024-05-13 00:00:00,Strategy Review,"Subject: Strategy Review
+
+We're considering a new strategy for marketing strategy. Would you be open to discussing it?","Yo Quinn,
+Maybe, let me think before giving a final answer. Also, please do not hesitate to reach out.
+Thanks,
+Bob",MAYBE
+carol_0031,carol,2024-05-13 00:00:00,Scope Expansion,"Subject: Scope Expansion
+
+We want to expand the scope of customer feedback to include a new reporting module. Please approve.","Hi Alex! Hope you're doing well!
+Unfortunately I'll have to pass on this occasion. On top of that, let me know if you need anything else!
+Talk soon!
+Carol",REJECT
+dave_0033,dave,2024-05-13 00:00:00,Vendor Proposal,"Subject: Vendor Proposal
+
+Our company would like to offer marketing strategy services at \$10,000/month.","Quinn -
+Can't. on this occasion.
+-Dave",REJECT
+eve_0032,eve,2024-05-13 00:00:00,New Contact,"Subject: New Contact
+
+Hi, I'm Alex from DataSolutions. I wanted to connect regarding stakeholder alignment.","Hello Sam,
+Please provide quantitative details on before I can proceed. Considering the data, I will review all relevant parameters.
+Regards,
+Eve",REQUEST_MORE_INFORMATION
+carol_0032,carol,2024-05-15 00:00:00,Policy Update,"Subject: Policy Update
+
+The API integration policy needs updating. Can we discuss revisions next quarter?","Hi Quinn! Hope you're doing well!
+I'd love to revisit this another time until we have more clarity. Great news — let me know if you need anything else!
+Take care!
+Carol",DEFER
+alice_0033,alice,2024-05-16 00:00:00,Scope Expansion,"Subject: Scope Expansion
+
+We want to expand the scope of API integration to include a new reporting module. Please approve.","Hello Quinn,
+I am unable to proceed on this occasion. I would like to inform you that please do not hesitate to reach out.
+Best regards,
+Alice",REJECT
+bob_0032,bob,2024-05-16 00:00:00,Meeting Request,"Subject: Meeting Request
+
+Hi, could we schedule a budget allocation meeting next sprint? It should only take about 30 minutes.","Hi Jordan,
+Totally fine with that with your request. Just so you know, please do not hesitate to reach out.
+Thanks,
+Bob",ACCEPT
+dave_0034,dave,2024-05-16 00:00:00,Event Attendance,"Subject: Event Attendance
+
+Please confirm your attendance at the sprint planning event scheduled for this Friday.","Hi,
+Yes. with your request.
+Regards, Dave",ACCEPT
+carol_0033,carol,2024-05-17 00:00:00,Event Attendance,"Subject: Event Attendance
+
+Please confirm your attendance at the technical documentation event scheduled for tomorrow.","Hello Quinn! Great to hear from you!
+I'd love to with your request. Great news — let me know if you need anything else!
+Talk soon!
+Carol",ACCEPT
+eve_0033,eve,2024-05-17 00:00:00,Optional Workshop,"Subject: Optional Workshop
+
+There's an optional product launch workshop happening next Tuesday at 3pm. Would you like to join?","Hello Alex,
+Further analysis is required before giving a final answer. Furthermore, I will review all relevant parameters.
+Analytically yours,
+Eve",MAYBE
+bob_0033,bob,2024-05-20 00:00:00,Policy Change,"Subject: Policy Change
+
+We propose changing the Q3 planning policy to allow flexible deadlines. Do you approve?","Yo Taylor,
+Sorry, that doesn't work on this occasion. Just so you know, please do not hesitate to reach out.
+Later,
+Bob",REJECT
+eve_0034,eve,2024-05-20 00:00:00,Annual Review,"Subject: Annual Review
+
+It's time for the annual sprint planning review. Can we schedule this?","Dear Jordan,
+This decision should be postponed for analysis until we have more clarity. Furthermore, I will review all relevant parameters.
+Best,
+Eve",DEFER
+alice_0034,alice,2024-05-21 00:00:00,Policy Update,"Subject: Policy Update
+
+The client onboarding policy needs updating. Can we discuss revisions next quarter?","Hello Casey,
+Let us revisit this at a later date until we have more clarity. In addition, please do not hesitate to reach out.
+Sincerely,
+Alice",DEFER
+dave_0035,dave,2024-05-21 00:00:00,Policy Change,"Subject: Policy Change
+
+We propose changing the team building policy to allow self-paced learning. Do you approve?","No. on this occasion.
+Dave",REJECT
+bob_0034,bob,2024-05-22 00:00:00,Budget Request,"Subject: Budget Request
+
+We are requesting an additional budget of \$2,500 for the marketing strategy initiative.","Yo Jordan,
+Nope, can't do that on this occasion. FYI, please do not hesitate to reach out.
+Later,
+Bob",REJECT
+carol_0034,carol,2024-05-22 00:00:00,Strategy Review,"Subject: Strategy Review
+
+We're considering a new strategy for hiring pipeline. Would you be open to discussing it?","Hello Taylor! Great to hear from you!
+Hmm, I'm not sure yet! before giving a final answer. I'm excited to say that let me know if you need anything else!
+Warmly,
+Carol",MAYBE
+bob_0035,bob,2024-05-24 00:00:00,Technical Question,"Subject: Technical Question
+
+We're experiencing issues with vendor evaluation. Could you advise?","Hey Casey,
+What's the deal with before I can proceed. FYI, please do not hesitate to reach out.
+Later,
+Bob",REQUEST_MORE_INFORMATION
+alice_0035,alice,2024-05-27 00:00:00,Invitation,"Subject: Invitation
+
+You are invited to join our product launch committee. Would you be available to participate?","Dear Casey,
+I would be happy to with your request. I would like to inform you that please do not hesitate to reach out.
+Best regards,
+Alice",ACCEPT
+bob_0036,bob,2024-05-27 00:00:00,Meeting Request,"Subject: Meeting Request
+
+Hi, could we schedule a marketing strategy meeting next Monday? It should only take about 45 minutes.","Hi Morgan,
+Sure, works for me with your request. Just so you know, please do not hesitate to reach out.
+Thanks,
+Bob",ACCEPT
+carol_0035,carol,2024-05-27 00:00:00,Partnership Proposal,"Subject: Partnership Proposal
+
+We'd like to explore a potential partnership around product launch. What are your thoughts?","Hello Casey! Great to hear from you!
+Let me think it over before giving a final answer. Great news — let me know if you need anything else!
+Talk soon!
+Carol",MAYBE
+dave_0036,dave,2024-05-27 00:00:00,Event Attendance,"Subject: Event Attendance
+
+Please confirm your attendance at the technical documentation event scheduled for tomorrow.","Agreed. with your request.
+Regards, Dave",ACCEPT
+eve_0035,eve,2024-05-27 00:00:00,Optional Workshop,"Subject: Optional Workshop
+
+There's an optional compliance review workshop happening next Tuesday at 3pm. Would you like to join?","Dear Quinn,
+The data is inconclusive at this stage before giving a final answer. From an analytical standpoint, I will review all relevant parameters.
+Best,
+Eve",MAYBE
+bob_0037,bob,2024-05-30 00:00:00,Partnership Proposal,"Subject: Partnership Proposal
+
+We'd like to explore a potential partnership around roadmap prioritization. What are your thoughts?","Hi Morgan,
+Not sure yet before giving a final answer. FYI, please do not hesitate to reach out.
+Thanks,
+Bob",MAYBE
+alice_0036,alice,2024-05-31 00:00:00,Optional Workshop,"Subject: Optional Workshop
+
+There's an optional API integration workshop happening this Friday. Would you like to join?","Hello Alex,
+This requires further thought before giving a final answer. Please note that please do not hesitate to reach out.
+Best regards,
+Alice",MAYBE
+carol_0036,carol,2024-05-31 00:00:00,Annual Review,"Subject: Annual Review
+
+It's time for the annual security audit review. Can we schedule this?","Hi Riley! Hope you're doing well!
+I'd love to revisit this another time until we have more clarity. Great news — let me know if you need anything else!
+Take care!
+Carol",DEFER
+dave_0037,dave,2024-05-31 00:00:00,Unclear Proposal,"Subject: Unclear Proposal
+
+We'd like to move forward with sprint planning. Please confirm your availability.","Hi,
+Need details. before I can proceed.
+Dave",REQUEST_MORE_INFORMATION
+eve_0036,eve,2024-05-31 00:00:00,Policy Change,"Subject: Policy Change
+
+We propose changing the cost optimization policy to allow flexible deadlines. Do you approve?","Dear Taylor,
+This does not align with the metrics on this occasion. From an analytical standpoint, I will review all relevant parameters.
+Best,
+Eve",REJECT
+alice_0037,alice,2024-06-03 00:00:00,Policy Update,"Subject: Policy Update
+
+The stakeholder alignment policy needs updating. Can we discuss revisions next quarter?","Dear Sam,
+Let us revisit this at a later date until we have more clarity. Please note that please do not hesitate to reach out.
+Sincerely,
+Alice",DEFER
+bob_0038,bob,2024-06-03 00:00:00,Budget Request,"Subject: Budget Request
+
+We are requesting an additional budget of \$50,000 for the API integration initiative.","Yo Riley,
+Sorry, that doesn't work on this occasion. FYI, please do not hesitate to reach out.
+Thanks,
+Bob",REJECT
+carol_0037,carol,2024-06-03 00:00:00,Optional Workshop,"Subject: Optional Workshop
+
+There's an optional performance review workshop happening next week. Would you like to join?","Hello Alex! Great to hear from you!
+Maybe! I'll get back to you before giving a final answer. Also, let me know if you need anything else!
+Take care!
+Carol",MAYBE
+eve_0037,eve,2024-06-03 00:00:00,Optional Workshop,"Subject: Optional Workshop
+
+There's an optional customer feedback workshop happening next week. Would you like to join?","Dear Taylor,
+Further analysis is required before giving a final answer. It should be noted that I will review all relevant parameters.
+Regards,
+Eve",MAYBE
+carol_0038,carol,2024-06-05 00:00:00,Optional Workshop,"Subject: Optional Workshop
+
+There's an optional technical documentation workshop happening next Monday. Would you like to join?","Hi Taylor! Hope you're doing well!
+Hmm, I'm not sure yet! before giving a final answer. Great news — let me know if you need anything else!
+Take care!
+Carol",MAYBE
+dave_0038,dave,2024-06-05 00:00:00,Collaboration Request,"Subject: Collaboration Request
+
+We'd love to collaborate with you on the cost optimization project. Are you interested?","Agreed. with your request.
+Regards, Dave",ACCEPT
+eve_0038,eve,2024-06-05 00:00:00,Vendor Proposal,"Subject: Vendor Proposal
+
+Our company would like to offer performance review services at \$10,000/month.","Dear Sam,
+Based on the data, this is not advisable on this occasion. Considering the data, I will review all relevant parameters.
+Regards,
+Eve",REJECT
+bob_0039,bob,2024-06-06 00:00:00,Event Attendance,"Subject: Event Attendance
+
+Please confirm your attendance at the stakeholder alignment event scheduled for next quarter.","Hi Casey,
+Totally fine with that with your request. btw, please do not hesitate to reach out.
+Cheers,
+Bob",ACCEPT
+eve_0039,eve,2024-06-07 00:00:00,Invitation,"Subject: Invitation
+
+You are invited to join our Q3 planning committee. Would you be available to participate?","Dear Jordan,
+Based on the available information, I concur with your request. It should be noted that I will review all relevant parameters.
+Analytically yours,
+Eve",ACCEPT
+alice_0038,alice,2024-06-10 00:00:00,Optional Workshop,"Subject: Optional Workshop
+
+There's an optional hiring pipeline workshop happening this Friday. Would you like to join?","Hello Casey,
+I will review and revert before giving a final answer. Furthermore, please do not hesitate to reach out.
+Best regards,
+Alice",MAYBE
+bob_0040,bob,2024-06-10 00:00:00,Resource Request,"Subject: Resource Request
+
+Can we borrow two developers for the client onboarding project?","Yo Quinn,
+No can do on this occasion. Just so you know, please do not hesitate to reach out.
+Thanks,
+Bob",REJECT
+carol_0039,carol,2024-06-10 00:00:00,Contract Renewal,"Subject: Contract Renewal
+
+Your data analysis contract expires end of month. Shall we discuss renewal terms?","Hello Alex! Great to hear from you!
+Can we come back to this soon? until we have more clarity. I'm excited to say that let me know if you need anything else!
+Take care!
+Carol",DEFER
+dave_0039,dave,2024-06-10 00:00:00,Strategy Review,"Subject: Strategy Review
+
+We're considering a new strategy for user research. Would you be open to discussing it?","Hi,
+TBD. before giving a final answer.
+-Dave",MAYBE
+bob_0041,bob,2024-06-12 00:00:00,Collaboration Request,"Subject: Collaboration Request
+
+We'd love to collaborate with you on the roadmap prioritization project. Are you interested?","Hi Casey,
+Yeah, sounds good with your request. btw, please do not hesitate to reach out.
+Later,
+Bob",ACCEPT
+eve_0040,eve,2024-06-12 00:00:00,Long-term Planning,"Subject: Long-term Planning
+
+We need to finalize the compliance review roadmap for next year. Can you review it?","Dear Sam,
+I recommend deferring pending additional data until we have more clarity. From an analytical standpoint, I will review all relevant parameters.
+Regards,
+Eve",DEFER
+carol_0040,carol,2024-06-13 00:00:00,Ambiguous Follow-up,"Subject: Ambiguous Follow-up
+
+Following up on our previous discussion about API integration.","Hi Alex! Hope you're doing well!
+I'd love to know more about before I can proceed. I'm excited to say that let me know if you need anything else!
+Talk soon!
+Carol",REQUEST_MORE_INFORMATION
+alice_0039,alice,2024-06-14 00:00:00,New Contact,"Subject: New Contact
+
+Hi, I'm Sam from InnovateLtd. I wanted to connect regarding client onboarding.","Dear Casey,
+I would require further clarification before I can proceed. In addition, please do not hesitate to reach out.
+Best regards,
+Alice",REQUEST_MORE_INFORMATION
+dave_0040,dave,2024-06-14 00:00:00,Partnership Proposal,"Subject: Partnership Proposal
+
+We'd like to explore a potential partnership around security audit. What are your thoughts?","Hi,
+Uncertain. before giving a final answer.
+Dave",MAYBE
+eve_0041,eve,2024-06-14 00:00:00,Ambiguous Follow-up,"Subject: Ambiguous Follow-up
+
+Following up on our previous discussion about sprint planning.","Dear Casey,
+I require the following data points: before I can proceed. From an analytical standpoint, I will review all relevant parameters.
+Analytically yours,
+Eve",REQUEST_MORE_INFORMATION
+bob_0042,bob,2024-06-17 00:00:00,Scope Expansion,"Subject: Scope Expansion
+
+We want to expand the scope of vendor evaluation to include mobile support. Please approve.","Hi Jordan,
+Nope, can't do that on this occasion. Also, please do not hesitate to reach out.
+Cheers,
+Bob",REJECT
+carol_0041,carol,2024-06-17 00:00:00,Webinar Registration,"Subject: Webinar Registration
+
+Would you like to register for the technical documentation webinar on end of month?","Hello Taylor! Great to hear from you!
+I'd love to with your request. Also, let me know if you need anything else!
+Talk soon!
+Carol",ACCEPT
+dave_0041,dave,2024-06-17 00:00:00,Resource Request,"Subject: Resource Request
+
+Can we borrow the testing environment for the performance review project?","Hi,
+Can't. on this occasion.
+Regards, Dave",REJECT
+alice_0040,alice,2024-06-18 00:00:00,Invitation,"Subject: Invitation
+
+You are invited to join our API integration committee. Would you be available to participate?","Hello Riley,
+Certainly, I can accommodate with your request. I would like to inform you that please do not hesitate to reach out.
+Kind regards,
+Alice",ACCEPT
+eve_0042,eve,2024-06-19 00:00:00,Task Assignment,"Subject: Task Assignment
+
+Can you take on the client onboarding task? It needs to be done by tomorrow.","Dear Quinn,
+The evidence supports proceeding with your request. Considering the data, I will review all relevant parameters.
+Analytically yours,
+Eve",ACCEPT
+carol_0042,carol,2024-06-20 00:00:00,Partnership Proposal,"Subject: Partnership Proposal
+
+We'd like to explore a potential partnership around team building. What are your thoughts?","Hello Morgan! Great to hear from you!
+Maybe! I'll get back to you before giving a final answer. Also, let me know if you need anything else!
+Talk soon!
+Carol",MAYBE
+bob_0043,bob,2024-06-21 00:00:00,Partnership Proposal,"Subject: Partnership Proposal
+
+We'd like to explore a potential partnership around stakeholder alignment. What are your thoughts?","Hi Casey,
+Maybe, let me think before giving a final answer. btw, please do not hesitate to reach out.
+Cheers,
+Bob",MAYBE
+dave_0042,dave,2024-06-21 00:00:00,Vendor Proposal,"Subject: Vendor Proposal
+
+Our company would like to offer client onboarding services at \$25,000/month.","Hi,
+No. on this occasion.
+Regards, Dave",REJECT
+alice_0041,alice,2024-06-24 00:00:00,Long-term Planning,"Subject: Long-term Planning
+
+We need to finalize the client onboarding roadmap for next year. Can you review it?","Dear Jordan,
+I propose we defer this matter until we have more clarity. In addition, please do not hesitate to reach out.
+Kind regards,
+Alice",DEFER
+bob_0044,bob,2024-06-24 00:00:00,Partnership Proposal,"Subject: Partnership Proposal
+
+We'd like to explore a potential partnership around hiring pipeline. What are your thoughts?","Yo Quinn,
+Could go either way before giving a final answer. FYI, please do not hesitate to reach out.
+Cheers,
+Bob",MAYBE
+carol_0043,carol,2024-06-24 00:00:00,New Contact,"Subject: New Contact
+
+Hi, I'm Jordan from InnovateLtd. I wanted to connect regarding budget allocation.","Hello Jordan! Great to hear from you!
+Could you share a bit more about before I can proceed. I'm excited to say that let me know if you need anything else!
+Talk soon!
+Carol",REQUEST_MORE_INFORMATION
+eve_0043,eve,2024-06-24 00:00:00,Unclear Proposal,"Subject: Unclear Proposal
+
+We'd like to move forward with data analysis. Please confirm your availability.","Hello Jordan,
+I require the following data points: before I can proceed. It should be noted that I will review all relevant parameters.
+Best,
+Eve",REQUEST_MORE_INFORMATION
+dave_0043,dave,2024-06-25 00:00:00,Scope Expansion,"Subject: Scope Expansion
+
+We want to expand the scope of stakeholder alignment to include mobile support. Please approve.","Alex -
+Can't. on this occasion.
+Regards, Dave",REJECT
+alice_0042,alice,2024-06-26 00:00:00,New Contact,"Subject: New Contact
+
+Hi, I'm Riley from CloudBase Inc. I wanted to connect regarding sprint planning.","Dear Riley,
+Could you kindly provide additional details before I can proceed. Please note that please do not hesitate to reach out.
+Sincerely,
+Alice",REQUEST_MORE_INFORMATION
+bob_0045,bob,2024-06-27 00:00:00,Strategy Review,"Subject: Strategy Review
+
+We're considering a new strategy for stakeholder alignment. Would you be open to discussing it?","Yo Morgan,
+Not sure yet before giving a final answer. Just so you know, please do not hesitate to reach out.
+Cheers,
+Bob",MAYBE
+carol_0044,carol,2024-06-27 00:00:00,Optional Workshop,"Subject: Optional Workshop
+
+There's an optional client onboarding workshop happening next week. Would you like to join?","Hello Alex! Great to hear from you!
+Let me think it over before giving a final answer. Also, let me know if you need anything else!
+Talk soon!
+Carol",MAYBE
+alice_0043,alice,2024-06-28 00:00:00,Event Attendance,"Subject: Event Attendance
+
+Please confirm your attendance at the technical documentation event scheduled for tomorrow.","Hello Morgan,
+Certainly, I can accommodate with your request. Furthermore, please do not hesitate to reach out.
+Best regards,
+Alice",ACCEPT
+eve_0044,eve,2024-06-28 00:00:00,Resource Request,"Subject: Resource Request
+
+Can we borrow two developers for the user research project?","Hello Alex,
+The risk-benefit analysis does not support this on this occasion. Considering the data, I will review all relevant parameters.
+Best,
+Eve",REJECT
+alice_0044,alice,2024-07-01 00:00:00,Policy Change,"Subject: Policy Change
+
+We propose changing the team building policy to allow self-paced learning. Do you approve?","Hello Jordan,
+I am unable to proceed on this occasion. In addition, please do not hesitate to reach out.
+Kind regards,
+Alice",REJECT
+bob_0046,bob,2024-07-01 00:00:00,Invitation,"Subject: Invitation
+
+You are invited to join our technical documentation committee. Would you be available to participate?","Yo Jordan,
+Yeah, sounds good with your request. btw, please do not hesitate to reach out.
+Cheers,
+Bob",ACCEPT
+carol_0045,carol,2024-07-01 00:00:00,New Contact,"Subject: New Contact
+
+Hi, I'm Jordan from InnovateLtd. I wanted to connect regarding data analysis.","Hi Jordan! Hope you're doing well!
+I'd love to know more about before I can proceed. Great news — let me know if you need anything else!
+Talk soon!
+Carol",REQUEST_MORE_INFORMATION
+dave_0044,dave,2024-07-01 00:00:00,Long-term Planning,"Subject: Long-term Planning
+
+We need to finalize the security audit roadmap for next year. Can you review it?","Jordan -
+Not now. until we have more clarity.
+Regards, Dave",DEFER
+bob_0047,bob,2024-07-03 00:00:00,Collaboration Request,"Subject: Collaboration Request
+
+We'd love to collaborate with you on the technical documentation project. Are you interested?","Hey Sam,
+Yeah, sounds good with your request. FYI, please do not hesitate to reach out.
+Thanks,
+Bob",ACCEPT
+eve_0045,eve,2024-07-03 00:00:00,Vague Request,"Subject: Vague Request
+
+Can you help us with compliance review? It would be greatly appreciated.","Hello Taylor,
+What are the key metrics for before I can proceed. From an analytical standpoint, I will review all relevant parameters.
+Best,
+Eve",REQUEST_MORE_INFORMATION
+bob_0048,bob,2024-07-05 00:00:00,Event Attendance,"Subject: Event Attendance
+
+Please confirm your attendance at the team building event scheduled for tomorrow.","Hi Sam,
+Totally fine with that with your request. FYI, please do not hesitate to reach out.
+Later,
+Bob",ACCEPT
+alice_0045,alice,2024-07-08 00:00:00,New Initiative,"Subject: New Initiative
+
+We're thinking of launching a marketing strategy initiative. Does this interest you?","Hello Riley,
+This requires further thought before giving a final answer. Please note that please do not hesitate to reach out.
+Kind regards,
+Alice",MAYBE
+carol_0046,carol,2024-07-08 00:00:00,Invitation,"Subject: Invitation
+
+You are invited to join our security audit committee. Would you be available to participate?","Hello Alex! Great to hear from you!
+Absolutely, I'm in with your request. On top of that, let me know if you need anything else!
+Warmly,
+Carol",ACCEPT
+dave_0045,dave,2024-07-08 00:00:00,Annual Review,"Subject: Annual Review
+
+It's time for the annual team building review. Can we schedule this?","Hi,
+Not now. until we have more clarity.
+-Dave",DEFER
+eve_0046,eve,2024-07-08 00:00:00,Technical Question,"Subject: Technical Question
+
+We're experiencing issues with roadmap prioritization. Could you advise?","Hello Quinn,
+Please provide quantitative details on before I can proceed. Considering the data, I will review all relevant parameters.
+Best,
+Eve",REQUEST_MORE_INFORMATION
+bob_0049,bob,2024-07-09 00:00:00,Invitation,"Subject: Invitation
+
+You are invited to join our API integration committee. Would you be available to participate?","Yo Jordan,
+Totally fine with that with your request. Just so you know, please do not hesitate to reach out.
+Cheers,
+Bob",ACCEPT
+carol_0047,carol,2024-07-10 00:00:00,Vendor Proposal,"Subject: Vendor Proposal
+
+Our company would like to offer technical documentation services at \$15,000/month.","Hello Taylor! Great to hear from you!
+Unfortunately I'll have to pass on this occasion. Also, let me know if you need anything else!
+Talk soon!
+Carol",REJECT
+eve_0047,eve,2024-07-10 00:00:00,Scope Expansion,"Subject: Scope Expansion
+
+We want to expand the scope of product launch to include additional features. Please approve.","Dear Casey,
+The risk-benefit analysis does not support this on this occasion. From an analytical standpoint, I will review all relevant parameters.
+Regards,
+Eve",REJECT
+dave_0046,dave,2024-07-12 00:00:00,Ambiguous Follow-up,"Subject: Ambiguous Follow-up
+
+Following up on our previous discussion about vendor evaluation.","Hi,
+More info needed. before I can proceed.
+Dave",REQUEST_MORE_INFORMATION
+alice_0046,alice,2024-07-15 00:00:00,Meeting Request,"Subject: Meeting Request
+
+Hi, could we schedule a stakeholder alignment meeting next Tuesday at 3pm? It should only take about 15 minutes.","Dear Quinn,
+I am pleased to confirm with your request. Furthermore, please do not hesitate to reach out.
+Best regards,
+Alice",ACCEPT
+bob_0050,bob,2024-07-15 00:00:00,Webinar Registration,"Subject: Webinar Registration
+
+Would you like to register for the marketing strategy webinar on next sprint?","Hi Sam,
+Totally fine with that with your request. btw, please do not hesitate to reach out.
+Later,
+Bob",ACCEPT
+carol_0048,carol,2024-07-15 00:00:00,Meeting Request,"Subject: Meeting Request
+
+Hi, could we schedule a sprint planning meeting next Tuesday at 3pm? It should only take about 30 minutes.","Hi Riley! Hope you're doing well!
+Absolutely, I'm in with your request. On top of that, let me know if you need anything else!
+Talk soon!
+Carol",ACCEPT
+eve_0048,eve,2024-07-15 00:00:00,Task Assignment,"Subject: Task Assignment
+
+Can you take on the security audit task? It needs to be done by next sprint.","Dear Quinn,
+The evidence supports proceeding with your request. From an analytical standpoint, I will review all relevant parameters.
+Analytically yours,
+Eve",ACCEPT
+carol_0049,carol,2024-07-17 00:00:00,Ambiguous Follow-up,"Subject: Ambiguous Follow-up
+
+Following up on our previous discussion about API integration.","Hello Riley! Great to hear from you!
+Could you share a bit more about before I can proceed. Great news — let me know if you need anything else!
+Take care!
+Carol",REQUEST_MORE_INFORMATION
+dave_0047,dave,2024-07-17 00:00:00,Collaboration Request,"Subject: Collaboration Request
+
+We'd love to collaborate with you on the data analysis project. Are you interested?","Agreed. with your request.
+Regards, Dave",ACCEPT
+eve_0049,eve,2024-07-17 00:00:00,New Contact,"Subject: New Contact
+
+Hi, I'm Alex from NextGen Systems. I wanted to connect regarding vendor evaluation.","Hello Sam,
+What are the key metrics for before I can proceed. Considering the data, I will review all relevant parameters.
+Analytically yours,
+Eve",REQUEST_MORE_INFORMATION
+bob_0051,bob,2024-07-18 00:00:00,Collaboration Request,"Subject: Collaboration Request
+
+We'd love to collaborate with you on the vendor evaluation project. Are you interested?","Hi Riley,
+Totally fine with that with your request. FYI, please do not hesitate to reach out.
+Cheers,
+Bob",ACCEPT
+alice_0047,alice,2024-07-19 00:00:00,Partnership Proposal,"Subject: Partnership Proposal
+
+We'd like to explore a potential partnership around roadmap prioritization. What are your thoughts?","Dear Quinn,
+I will review and revert before giving a final answer. Please note that please do not hesitate to reach out.
+Best regards,
+Alice",MAYBE
+bob_0052,bob,2024-07-22 00:00:00,Partnership Proposal,"Subject: Partnership Proposal
+
+We'd like to explore a potential partnership around marketing strategy. What are your thoughts?","Yo Casey,
+Maybe, let me think before giving a final answer. Just so you know, please do not hesitate to reach out.
+Cheers,
+Bob",MAYBE
+carol_0050,carol,2024-07-22 00:00:00,New Initiative,"Subject: New Initiative
+
+We're thinking of launching a compliance review initiative. Does this interest you?","Hi Quinn! Hope you're doing well!
+Let me think it over before giving a final answer. On top of that, let me know if you need anything else!
+Talk soon!
+Carol",MAYBE
+dave_0048,dave,2024-07-22 00:00:00,Optional Workshop,"Subject: Optional Workshop
+
+There's an optional security audit workshop happening tomorrow. Would you like to join?","Quinn -
+TBD. before giving a final answer.
+Regards, Dave",MAYBE
+eve_0050,eve,2024-07-22 00:00:00,Optional Workshop,"Subject: Optional Workshop
+
+There's an optional team building workshop happening this Friday. Would you like to join?","Hello Sam,
+A conditional acceptance depends on before giving a final answer. Furthermore, I will review all relevant parameters.
+Analytically yours,
+Eve",MAYBE
+alice_0048,alice,2024-07-24 00:00:00,Unclear Proposal,"Subject: Unclear Proposal
+
+We'd like to move forward with performance review. Please confirm your availability.","Dear Morgan,
+I would require further clarification before I can proceed. In addition, please do not hesitate to reach out.
+Best regards,
+Alice",REQUEST_MORE_INFORMATION
+bob_0053,bob,2024-07-24 00:00:00,Scope Expansion,"Subject: Scope Expansion
+
+We want to expand the scope of team building to include a new reporting module. Please approve.","Yo Casey,
+Nope, can't do that on this occasion. Just so you know, please do not hesitate to reach out.
+Later,
+Bob",REJECT
+eve_0051,eve,2024-07-24 00:00:00,Event Attendance,"Subject: Event Attendance
+
+Please confirm your attendance at the stakeholder alignment event scheduled for next quarter.","Dear Quinn,
+The evidence supports proceeding with your request. Furthermore, I will review all relevant parameters.
+Analytically yours,
+Eve",ACCEPT
+carol_0051,carol,2024-07-25 00:00:00,Invitation,"Subject: Invitation
+
+You are invited to join our budget allocation committee. Would you be available to participate?","Hello Morgan! Great to hear from you!
+I'd love to with your request. On top of that, let me know if you need anything else!
+Warmly,
+Carol",ACCEPT
+dave_0049,dave,2024-07-25 00:00:00,Resource Request,"Subject: Resource Request
+
+Can we borrow two developers for the hiring pipeline project?","Hi,
+Declined. on this occasion.
+Regards, Dave",REJECT
+alice_0049,alice,2024-07-29 00:00:00,Policy Update,"Subject: Policy Update
+
+The cost optimization policy needs updating. Can we discuss revisions next quarter?","Dear Sam,
+I propose we defer this matter until we have more clarity. Furthermore, please do not hesitate to reach out.
+Kind regards,
+Alice",DEFER
+bob_0054,bob,2024-07-29 00:00:00,Partnership Proposal,"Subject: Partnership Proposal
+
+We'd like to explore a potential partnership around marketing strategy. What are your thoughts?","Yo Sam,
+Not sure yet before giving a final answer. btw, please do not hesitate to reach out.
+Cheers,
+Bob",MAYBE
+eve_0052,eve,2024-07-29 00:00:00,Policy Update,"Subject: Policy Update
+
+The cost optimization policy needs updating. Can we discuss revisions next quarter?","Hello Alex,
+This decision should be postponed for analysis until we have more clarity. Considering the data, I will review all relevant parameters.
+Best,
+Eve",DEFER
+carol_0052,carol,2024-07-30 00:00:00,Resource Request,"Subject: Resource Request
+
+Can we borrow the testing environment for the performance review project?","Hello Quinn! Great to hear from you!
+I'm so sorry, but I can't on this occasion. On top of that, let me know if you need anything else!
+Take care!
+Carol",REJECT
+dave_0050,dave,2024-07-30 00:00:00,Invitation,"Subject: Invitation
+
+You are invited to join our client onboarding committee. Would you be available to participate?","Alex -
+Fine. with your request.
+Dave",ACCEPT
+bob_0055,bob,2024-07-31 00:00:00,Long-term Planning,"Subject: Long-term Planning
+
+We need to finalize the compliance review roadmap for next year. Can you review it?","Hey Jordan,
+Let's table this for now until we have more clarity. btw, please do not hesitate to reach out.
+Thanks,
+Bob",DEFER
+alice_0050,alice,2024-08-01 00:00:00,Meeting Request,"Subject: Meeting Request
+
+Hi, could we schedule a client onboarding meeting tomorrow? It should only take about 30 minutes.","Dear Casey,
+Certainly, I can accommodate with your request. I would like to inform you that please do not hesitate to reach out.
+Best regards,
+Alice",ACCEPT
+bob_0056,bob,2024-08-02 00:00:00,Policy Update,"Subject: Policy Update
+
+The client onboarding policy needs updating. Can we discuss revisions next quarter?","Yo Casey,
+Let's table this for now until we have more clarity. Also, please do not hesitate to reach out.
+Cheers,
+Bob",DEFER
+alice_0051,alice,2024-08-05 00:00:00,Ambiguous Follow-up,"Subject: Ambiguous Follow-up
+
+Following up on our previous discussion about security audit.","Dear Riley,
+I would require further clarification before I can proceed. I would like to inform you that please do not hesitate to reach out.
+Kind regards,
+Alice",REQUEST_MORE_INFORMATION
+carol_0053,carol,2024-08-05 00:00:00,Resource Request,"Subject: Resource Request
+
+Can we borrow two developers for the stakeholder alignment project?","Hi Quinn! Hope you're doing well!
+I'm so sorry, but I can't on this occasion. Also, let me know if you need anything else!
+Talk soon!
+Carol",REJECT
+dave_0051,dave,2024-08-05 00:00:00,Webinar Registration,"Subject: Webinar Registration
+
+Would you like to register for the user research webinar on next sprint?","Alex -
+Yes. with your request.
+Regards, Dave",ACCEPT
+eve_0053,eve,2024-08-05 00:00:00,Policy Change,"Subject: Policy Change
+
+We propose changing the customer feedback policy to allow optional attendance. Do you approve?","Dear Casey,
+Based on the data, this is not advisable on this occasion. It should be noted that I will review all relevant parameters.
+Analytically yours,
+Eve",REJECT
+bob_0057,bob,2024-08-07 00:00:00,Event Attendance,"Subject: Event Attendance
+
+Please confirm your attendance at the data analysis event scheduled for this Thursday morning.","Yo Sam,
+Yeah, sounds good with your request. Also, please do not hesitate to reach out.
+Cheers,
+Bob",ACCEPT
+eve_0054,eve,2024-08-07 00:00:00,Budget Request,"Subject: Budget Request
+
+We are requesting an additional budget of \$50,000 for the vendor evaluation initiative.","Dear Casey,
+This does not align with the metrics on this occasion. Furthermore, I will review all relevant parameters.
+Analytically yours,
+Eve",REJECT
+alice_0052,alice,2024-08-08 00:00:00,Event Attendance,"Subject: Event Attendance
+
+Please confirm your attendance at the API integration event scheduled for next quarter.","Dear Morgan,
+I would be happy to with your request. In addition, please do not hesitate to reach out.
+Best regards,
+Alice",ACCEPT
+bob_0058,bob,2024-08-09 00:00:00,New Contact,"Subject: New Contact
+
+Hi, I'm Sam from TechCorp. I wanted to connect regarding sprint planning.","Hey Jordan,
+What's the deal with before I can proceed. Also, please do not hesitate to reach out.
+Later,
+Bob",REQUEST_MORE_INFORMATION
+carol_0054,carol,2024-08-09 00:00:00,Vague Request,"Subject: Vague Request
+
+Can you help us with roadmap prioritization? It would be greatly appreciated.","Hi Quinn! Hope you're doing well!
+I'd love to know more about before I can proceed. I'm excited to say that let me know if you need anything else!
+Warmly,
+Carol",REQUEST_MORE_INFORMATION
+dave_0052,dave,2024-08-09 00:00:00,Webinar Registration,"Subject: Webinar Registration
+
+Would you like to register for the customer feedback webinar on next Tuesday at 3pm?","Yes. with your request.
+Dave",ACCEPT
+alice_0053,alice,2024-08-12 00:00:00,Invitation,"Subject: Invitation
+
+You are invited to join our team building committee. Would you be available to participate?","Hello Jordan,
+I am pleased to confirm with your request. I would like to inform you that please do not hesitate to reach out.
+Sincerely,
+Alice",ACCEPT
+bob_0059,bob,2024-08-12 00:00:00,Contract Renewal,"Subject: Contract Renewal
+
+Your security audit contract expires tomorrow. Shall we discuss renewal terms?","Hey Alex,
+Can we deal with this later? until we have more clarity. Also, please do not hesitate to reach out.
+Cheers,
+Bob",DEFER
+dave_0053,dave,2024-08-12 00:00:00,Optional Workshop,"Subject: Optional Workshop
+
+There's an optional hiring pipeline workshop happening this Friday. Would you like to join?","Jordan -
+Possibly. before giving a final answer.
+Dave",MAYBE
+eve_0055,eve,2024-08-12 00:00:00,Meeting Request,"Subject: Meeting Request
+
+Hi, could we schedule a compliance review meeting this Friday? It should only take about 15 minutes.","Dear Jordan,
+The evidence supports proceeding with your request. From an analytical standpoint, I will review all relevant parameters.
+Analytically yours,
+Eve",ACCEPT
+carol_0055,carol,2024-08-14 00:00:00,Contract Renewal,"Subject: Contract Renewal
+
+Your sprint planning contract expires this Friday. Shall we discuss renewal terms?","Hello Riley! Great to hear from you!
+Can we come back to this soon? until we have more clarity. Great news — let me know if you need anything else!
+Talk soon!
+Carol",DEFER
+alice_0054,alice,2024-08-15 00:00:00,Collaboration Request,"Subject: Collaboration Request
+
+We'd love to collaborate with you on the compliance review project. Are you interested?","Dear Riley,
+I am pleased to confirm with your request. In addition, please do not hesitate to reach out.
+Kind regards,
+Alice",ACCEPT
+eve_0056,eve,2024-08-16 00:00:00,Webinar Registration,"Subject: Webinar Registration
+
+Would you like to register for the roadmap prioritization webinar on next sprint?","Dear Quinn,
+The evidence supports proceeding with your request. Considering the data, I will review all relevant parameters.
+Analytically yours,
+Eve",ACCEPT
+alice_0055,alice,2024-08-19 00:00:00,Webinar Registration,"Subject: Webinar Registration
+
+Would you like to register for the cost optimization webinar on next Monday?","Hello Morgan,
+I would be happy to with your request. In addition, please do not hesitate to reach out.
+Best regards,
+Alice",ACCEPT
+carol_0056,carol,2024-08-19 00:00:00,Resource Request,"Subject: Resource Request
+
+Can we borrow the conference room for the sprint planning project?","Hello Taylor! Great to hear from you!
+I'm so sorry, but I can't on this occasion. Also, let me know if you need anything else!
+Take care!
+Carol",REJECT
+dave_0054,dave,2024-08-19 00:00:00,Webinar Registration,"Subject: Webinar Registration
+
+Would you like to register for the hiring pipeline webinar on next quarter?","Yes. with your request.
+Regards, Dave",ACCEPT
+eve_0057,eve,2024-08-19 00:00:00,Policy Update,"Subject: Policy Update
+
+The Q3 planning policy needs updating. Can we discuss revisions next quarter?","Dear Sam,
+This decision should be postponed for analysis until we have more clarity. Considering the data, I will review all relevant parameters.
+Best,
+Eve",DEFER
+carol_0057,carol,2024-08-22 00:00:00,Unclear Proposal,"Subject: Unclear Proposal
+
+We'd like to move forward with sprint planning. Please confirm your availability.","Hello Quinn! Great to hear from you!
+I'd love to know more about before I can proceed. On top of that, let me know if you need anything else!
+Warmly,
+Carol",REQUEST_MORE_INFORMATION
+dave_0055,dave,2024-08-22 00:00:00,Strategy Review,"Subject: Strategy Review
+
+We're considering a new strategy for team building. Would you be open to discussing it?","Uncertain. before giving a final answer.
+-Dave",MAYBE
+alice_0056,alice,2024-08-23 00:00:00,Policy Update,"Subject: Policy Update
+
+The customer feedback policy needs updating. Can we discuss revisions next quarter?","Dear Taylor,
+Let us revisit this at a later date until we have more clarity. In addition, please do not hesitate to reach out.
+Best regards,
+Alice",DEFER
+carol_0058,carol,2024-08-26 00:00:00,Budget Request,"Subject: Budget Request
+
+We are requesting an additional budget of \$50,000 for the data analysis initiative.","Hi Alex! Hope you're doing well!
+Unfortunately I'll have to pass on this occasion. I'm excited to say that let me know if you need anything else!
+Warmly,
+Carol",REJECT
+dave_0056,dave,2024-08-26 00:00:00,Technical Question,"Subject: Technical Question
+
+We're experiencing issues with marketing strategy. Could you advise?","Need details. before I can proceed.
+Regards, Dave",REQUEST_MORE_INFORMATION
+eve_0058,eve,2024-08-26 00:00:00,Meeting Request,"Subject: Meeting Request
+
+Hi, could we schedule a client onboarding meeting next Tuesday at 3pm? It should only take about 15 minutes.","Hello Sam,
+The evidence supports proceeding with your request. Considering the data, I will review all relevant parameters.
+Regards,
+Eve",ACCEPT
+alice_0057,alice,2024-08-28 00:00:00,Meeting Request,"Subject: Meeting Request
+
+Hi, could we schedule a data analysis meeting next week? It should only take about 60 minutes.","Hello Sam,
+I would be happy to with your request. In addition, please do not hesitate to reach out.
+Best regards,
+Alice",ACCEPT
+dave_0057,dave,2024-08-28 00:00:00,Long-term Planning,"Subject: Long-term Planning
+
+We need to finalize the stakeholder alignment roadmap for next year. Can you review it?","Not now. until we have more clarity.
+Dave",DEFER
+eve_0059,eve,2024-08-29 00:00:00,Vague Request,"Subject: Vague Request
+
+Can you help us with hiring pipeline? It would be greatly appreciated.","Hello Sam,
+What are the key metrics for before I can proceed. From an analytical standpoint, I will review all relevant parameters.
+Regards,
+Eve",REQUEST_MORE_INFORMATION
+carol_0059,carol,2024-08-30 00:00:00,New Contact,"Subject: New Contact
+
+Hi, I'm Sam from CloudBase Inc. I wanted to connect regarding customer feedback.","Hello Sam! Great to hear from you!
+Could you share a bit more about before I can proceed. Great news — let me know if you need anything else!
+Take care!
+Carol",REQUEST_MORE_INFORMATION
+alice_0058,alice,2024-09-02 00:00:00,Invitation,"Subject: Invitation
+
+You are invited to join our team building committee. Would you be available to participate?","Dear Jordan,
+Certainly, I can accommodate with your request. I would like to inform you that please do not hesitate to reach out.
+Sincerely,
+Alice",ACCEPT
+dave_0058,dave,2024-09-02 00:00:00,Budget Request,"Subject: Budget Request
+
+We are requesting an additional budget of \$15,000 for the performance review initiative.","No. on this occasion.
+-Dave",REJECT
+dave_0059,dave,2024-09-05 00:00:00,Long-term Planning,"Subject: Long-term Planning
+
+We need to finalize the Q3 planning roadmap for next year. Can you review it?","Hi,
+Not now. until we have more clarity.
+Regards, Dave",DEFER
+alice_0059,alice,2024-09-09 00:00:00,Optional Workshop,"Subject: Optional Workshop
+
+There's an optional sprint planning workshop happening tomorrow. Would you like to join?","Dear Riley,
+This requires further thought before giving a final answer. Furthermore, please do not hesitate to reach out.
+Best regards,
+Alice",MAYBE

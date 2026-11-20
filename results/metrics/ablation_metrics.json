@@ -1,0 +1,210 @@
+{
+  "aggregate": {
+    "no_context": {
+      "semantic_similarity": 0.0705,
+      "style_similarity": 0.616,
+      "relevance": 0.0626,
+      "decision_consistency": 0.3067
+    },
+    "memory_only": {
+      "semantic_similarity": 0.0705,
+      "style_similarity": 0.616,
+      "relevance": 0.0626,
+      "decision_consistency": 0.3067
+    },
+    "full": {
+      "semantic_similarity": 0.0705,
+      "style_similarity": 0.616,
+      "relevance": 0.0626,
+      "decision_consistency": 0.3067
+    }
+  },
+  "per_sample": {
+    "no_context": [
+      {
+        "semantic_similarity": 0.0403,
+        "style_similarity": 0.6103,
+        "relevance": 0.0393,
+        "decision_consistency": 0.0
+      },
+      {
+        "semantic_similarity": 0.0587,
+        "style_similarity": 0.608,
+        "relevance": 0.0884,
+        "decision_consistency": 0.0
+      },
+      {
+        "semantic_similarity": -0.0267,
+        "style_similarity": 0.8015,
+        "relevance": 0.0134,
+        "decision_consistency": 0.2564
+      },
+      {
+        "semantic_similarity": -0.0263,
+        "style_similarity": 0.8424,
+        "relevance": 0.2424,
+        "decision_consistency": 0.5556
+      },
+      {
+        "semantic_similarity": 0.1399,
+        "style_similarity": 0.6679,
+        "relevance": 0.0445,
+        "decision_consistency": 0.0
+      },
+      {
+        "semantic_similarity": 0.0617,
+        "style_similarity": 0.5806,
+        "relevance": 0.2129,
+        "decision_consistency": 0.8333
+      },
+      {
+        "semantic_similarity": 0.0606,
+        "style_similarity": 0.4108,
+        "relevance": -0.0372,
+        "decision_consistency": 0.2564
+      },
+      {
+        "semantic_similarity": 0.1104,
+        "style_similarity": 0.4202,
+        "relevance": -0.0094,
+        "decision_consistency": 0.6061
+      },
+      {
+        "semantic_similarity": 0.066,
+        "style_similarity": 0.5517,
+        "relevance": -0.0437,
+        "decision_consistency": 0.303
+      },
+      {
+        "semantic_similarity": 0.2207,
+        "style_similarity": 0.6664,
+        "relevance": 0.0755,
+        "decision_consistency": 0.2564
+      }
+    ],
+    "memory_only": [
+      {
+        "semantic_similarity": 0.0403,
+        "style_similarity": 0.6103,
+        "relevance": 0.0393,
+        "decision_consistency": 0.0
+      },
+      {
+        "semantic_similarity": 0.0587,
+        "style_similarity": 0.608,
+        "relevance": 0.0884,
+        "decision_consistency": 0.0
+      },
+      {
+        "semantic_similarity": -0.0267,
+        "style_similarity": 0.8015,
+        "relevance": 0.0134,
+        "decision_consistency": 0.2564
+      },
+      {
+        "semantic_similarity": -0.0263,
+        "style_similarity": 0.8424,
+        "relevance": 0.2424,
+        "decision_consistency": 0.5556
+      },
+      {
+        "semantic_similarity": 0.1399,
+        "style_similarity": 0.6679,
+        "relevance": 0.0445,
+        "decision_consistency": 0.0
+      },
+      {
+        "semantic_similarity": 0.0617,
+        "style_similarity": 0.5806,
+        "relevance": 0.2129,
+        "decision_consistency": 0.8333
+      },
+      {
+        "semantic_similarity": 0.0606,
+        "style_similarity": 0.4108,
+        "relevance": -0.0372,
+        "decision_consistency": 0.2564
+      },
+      {
+        "semantic_similarity": 0.1104,
+        "style_similarity": 0.4202,
+        "relevance": -0.0094,
+        "decision_consistency": 0.6061
+      },
+      {
+        "semantic_similarity": 0.066,
+        "style_similarity": 0.5517,
+        "relevance": -0.0437,
+        "decision_consistency": 0.303
+      },
+      {
+        "semantic_similarity": 0.2207,
+        "style_similarity": 0.6664,
+        "relevance": 0.0755,
+        "decision_consistency": 0.2564
+      }
+    ],
+    "full": [
+      {
+        "semantic_similarity": 0.0403,
+        "style_similarity": 0.6103,
+        "relevance": 0.0393,
+        "decision_consistency": 0.0
+      },
+      {
+        "semantic_similarity": 0.0587,
+        "style_similarity": 0.608,
+        "relevance": 0.0884,
+        "decision_consistency": 0.0
+      },
+      {
+        "semantic_similarity": -0.0267,
+        "style_similarity": 0.8015,
+        "relevance": 0.0134,
+        "decision_consistency": 0.2564
+      },
+      {
+        "semantic_similarity": -0.0263,
+        "style_similarity": 0.8424,
+        "relevance": 0.2424,
+        "decision_consistency": 0.5556
+      },
+      {
+        "semantic_similarity": 0.1399,
+        "style_similarity": 0.6679,
+        "relevance": 0.0445,
+        "decision_consistency": 0.0
+      },
+      {
+        "semantic_similarity": 0.0617,
+        "style_similarity": 0.5806,
+        "relevance": 0.2129,
+        "decision_consistency": 0.8333
+      },
+      {
+        "semantic_similarity": 0.0606,
+        "style_similarity": 0.4108,
+        "relevance": -0.0372,
+        "decision_consistency": 0.2564
+      },
+      {
+        "semantic_similarity": 0.1104,
+        "style_similarity": 0.4202,
+        "relevance": -0.0094,
+        "decision_consistency": 0.6061
+      },
+      {
+        "semantic_similarity": 0.066,
+        "style_similarity": 0.5517,
+        "relevance": -0.0437,
+        "decision_consistency": 0.303
+      },
+      {
+        "semantic_similarity": 0.2207,
+        "style_similarity": 0.6664,
+        "relevance": 0.0755,
+        "decision_consistency": 0.2564
+      }
+    ]
+  }
+}
