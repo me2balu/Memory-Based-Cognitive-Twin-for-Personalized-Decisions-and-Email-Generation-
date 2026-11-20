@@ -21,6 +21,7 @@ IMPORTANT:
 """
 
 import os
+import re
 import pathlib
 from typing import List, Dict, Any
 
@@ -38,6 +39,63 @@ LLM_MODEL   = os.environ.get("LLM_MODEL", "llama-3.1-8b-instant")
 MOCK_MODE = not bool(LLM_API_KEY)   # automatically True when no key is set
 
 
+# -- Style profile extractor ---------------------------------------------------
+
+def _extract_style_profile(memories: List[Dict[str, Any]]) -> str:
+    """
+    Distil a concise style guide from memories instead of dumping
+    20 near-identical template responses to the LLM.
+    """
+    responses = [m["user_response"] for m in memories if m.get("user_response")]
+
+    # Greetings = first non-blank line of each response
+    greetings = []
+    for r in responses:
+        lines = [l.strip() for l in r.strip().split("\n") if l.strip()]
+        if lines:
+            greetings.append(lines[0])
+
+    # Sign-offs = last non-blank line
+    signoffs = []
+    for r in responses:
+        lines = [l.strip() for l in r.strip().split("\n") if l.strip()]
+        if len(lines) >= 2:
+            signoffs.append(lines[-1])
+
+    # Avg sentence length
+    lengths = []
+    for r in responses:
+        for s in re.split(r"[.!?]+", r):
+            words = s.split()
+            if words:
+                lengths.append(len(words))
+    avg_len = round(sum(lengths) / len(lengths)) if lengths else 10
+
+    # Tone: formal vs casual
+    all_text = " ".join(responses).lower()
+    formal = sum(1 for w in
+                 ["sincerely","regards","dear","kindly","furthermore",
+                  "accordingly","pleased","regret","appreciate"]
+                 if w in all_text)
+    casual = sum(1 for w in
+                 ["hey","yeah","sure","cheers","btw","fyi","nope",
+                  "totally","later","sounds good"]
+                 if w in all_text)
+    tone = "formal and professional" if formal > casual else \
+           "casual and conversational" if casual > formal else "neutral"
+
+    # Unique samples
+    unique_greetings = list(dict.fromkeys(greetings))[:3]
+    unique_signoffs  = list(dict.fromkeys(signoffs))[:3]
+
+    return (
+        f"- Tone            : {tone}\n"
+        f"- Sentence length : ~{avg_len} words per sentence\n"
+        f"- Greetings used  : {' | '.join(unique_greetings) or 'varies'}\n"
+        f"- Sign-offs used  : {' | '.join(unique_signoffs)  or 'varies'}"
+    )
+
+
 # -- Prompt builder ------------------------------------------------------------
 
 def _build_prompt(
@@ -48,86 +106,64 @@ def _build_prompt(
     include_decision: bool = True,
 ) -> str:
     """
-    Construct the LLM prompt.
-
-    Parameters:
-        include_memories : if False, omit historical memories (ablation: no_context)
-        include_decision : if False, omit the ML-predicted decision (ablation: memory_only)
-
-    LEAKAGE NOTE:
-        The target email's 'user_response' is NEVER included here.
-        The LLM must infer style from historical memories only.
+    Build the LLM prompt using a style profile + a few diverse examples.
+    Avoids dumping 20 near-identical template responses which causes the LLM
+    to copy them verbatim instead of writing a specific reply.
     """
-    # -- Memories block --------------------------------------------------------
     if include_memories and memories:
-        mem_lines = []
-        for i, m in enumerate(memories[:20], 1):
-            mem_lines.append(
-                f"[Memory {i}]"
-                f"\n  Date      : {m['timestamp']}"
-                f"\n  Subject   : {m['email_subject']}"
-                f"\n  Email     : {m['incoming_email'][:200]}..."
-                f"\n  My reply  : {m['user_response'][:300]}"
-                f"\n  Decision  : {m['decision']}"
-                f"\n  Similarity: {m['similarity_score']:.3f}"
+        style_profile = _extract_style_profile(memories)
+
+        # Pick 3 topically diverse examples (spread across the ranked list)
+        picks = []
+        step = max(1, len(memories) // 3)
+        for i in range(0, min(len(memories), 3 * step), step):
+            picks.append(memories[i])
+        picks = picks[:3]
+
+        example_lines = []
+        for i, m in enumerate(picks, 1):
+            example_lines.append(
+                f"Example {i} (decision={m['decision']}):\n"
+                f"  Received : {m['incoming_email'][:180].strip()}…\n"
+                f"  Replied  : {m['user_response'][:250].strip()}"
             )
-        memories_block = "\n\n".join(mem_lines)
+        examples_block = "\n\n".join(example_lines)
+
         mem_section = (
-            f"## Historical Memory ({len(memories)} past emails retrieved)\n\n"
-            f"{memories_block}"
+            f"## This Person's Writing Style\n\n"
+            f"{style_profile}\n\n"
+            f"## Example Replies They Have Written\n\n"
+            f"{examples_block}"
         )
     else:
-        mem_section = (
-            "## Historical Memory\n\n"
-            "(No historical memories available — responding without personalization context.)"
-        )
+        mem_section = "## Style\n\nUse clear, neutral, professional English."
 
-    # -- Decision block --------------------------------------------------------
-    style_instruction = (
-        "Adopt the writing style inferred from the historical memories above"
-        if include_memories else
-        "Use a clear, neutral, professional writing style"
+    decision_line = (
+        f"Decision to convey: **{predicted_decision}**\n"
+        if include_decision else
+        "Decide naturally (accept / decline / defer / ask for info) based on the email.\n"
     )
 
-    if include_decision:
-        task_section = f"""## ML-Predicted Decision
-
-The user's decision for this email is: **{predicted_decision}**
-
-## Your Task
-
-Write a reply email that:
-1. Directly and specifically addresses the content of the incoming email above
-2. Communicates the decision ({predicted_decision}) naturally within the reply — do NOT just say "I accept your request" generically; weave it into a real, context-specific response
-3. {style_instruction} — match the tone, formality, greeting, sign-off, and sentence length from the memories
-4. NEVER copy a past reply word-for-word; always tailor the response to THIS specific email
-5. Does NOT reveal that you are an AI
-
-Write ONLY the email body. No preamble, no explanation, no labels.
-"""
-    else:
-        task_section = f"""## Your Task
-
-Write a reply email that:
-1. Directly and specifically addresses the content of the incoming email above
-2. Decides naturally whether to accept, decline, defer, or ask for more information — based on the email content
-3. {style_instruction} — match the tone, formality, greeting, sign-off, and sentence length from the memories
-4. NEVER copy a past reply word-for-word; always tailor the response to THIS specific email
-5. Does NOT reveal that you are an AI
-
-Write ONLY the email body. No preamble, no explanation, no labels.
-"""
-
-    prompt = f"""You are acting as a Cognitive Twin — a system that replies to emails \
-exactly as a specific person would, based on their communication history.
+    prompt = f"""You are simulating how a specific person replies to emails.
+Study their style profile and examples below, then write a reply to the new email.
 
 {mem_section}
 
-## Incoming Email to Reply To
+## New Email to Reply To
 
-{incoming_email}
+{incoming_email.strip()}
 
-{task_section}"""
+## Instructions
+
+{decision_line}
+Write a reply that:
+- Directly addresses the SPECIFIC content and topic of the email above
+- Uses the person's writing style (tone, greeting, sign-off, sentence length) from the examples
+- Does NOT copy example phrases word-for-word — write fresh, specific content
+- Is complete (greeting + body + sign-off)
+- Does NOT mention that you are an AI
+
+Write ONLY the reply. No labels, no preamble."""
     return prompt
 
 
