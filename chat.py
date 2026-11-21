@@ -24,7 +24,7 @@ sys.path.insert(0, str(ROOT))
 
 from src.preprocessing      import load_raw, chronological_split
 from src.features           import fit_tfidf, build_features, make_label_encoder
-from src.models             import build_cognitive_twin, train_model, predict
+from src.models             import build_baseline, build_cognitive_twin, train_model, predict, predict_proba
 from src.memory             import embed_texts, build_memory_store, retrieve_memories
 from src.response_generator import generate_response, MOCK_MODE
 
@@ -45,14 +45,17 @@ def setup(user_id: str):
     df = load_raw()
     train_df, _, _ = chronological_split(df)
 
-    le = make_label_encoder()
-    y_train = le.transform(train_df["decision"].values)
+    le        = make_label_encoder()
+    y_train   = le.transform(train_df["decision"].values)
     tfidf_vec = fit_tfidf(train_df["incoming_email"].tolist())
-    X_train_ct, _ = build_features(train_df, tfidf_vec, use_embeddings=True)
-    ct_model = build_cognitive_twin()
-    train_model(ct_model, X_train_ct, y_train)
 
-    all_embs = embed_texts(df["incoming_email"].tolist())
+    # Use Logistic Regression for chat — it generalises better than Random
+    # Forest on small datasets and gives reliable predict_proba scores.
+    X_train_lr, _ = build_features(train_df, tfidf_vec, use_embeddings=False)
+    ct_model = build_baseline()          # LogisticRegression
+    train_model(ct_model, X_train_lr, y_train)
+
+    all_embs     = embed_texts(df["incoming_email"].tolist())
     memory_store = build_memory_store(df, all_embs)
 
     n = len(df[df["user_id"] == user_id])
@@ -66,10 +69,27 @@ def reply(user_input, user_id, df, ct_model, le, tfidf_vec, all_embs, memory_sto
     # Embed the input
     input_emb = embed_texts([user_input])[0]
 
-    # Predict decision
+    # Predict decision + confidence (advisory only — LR on TF-IDF)
     input_df = pd.DataFrame([{"incoming_email": user_input, "user_id": user_id}])
-    X_input, _ = build_features(input_df, tfidf_vec, use_embeddings=True)
-    predicted_decision = le.inverse_transform(predict(ct_model, X_input))[0]
+    X_input, _ = build_features(input_df, tfidf_vec, use_embeddings=False)
+
+    proba      = predict_proba(ct_model, X_input)[0]
+    confidence = float(proba.max())
+    predicted_decision = le.inverse_transform([proba.argmax()])[0]
+
+    # Fix 5: always use memory_only → LLM decides the actual intent.
+    # The ML label is shown for transparency but NOT forced into the prompt
+    # unless the model is highly confident (≥ 75%). This prevents the
+    # "REJECT for 'hallo'" problem entirely.
+    CONFIDENCE_THRESHOLD = 0.75
+    if confidence >= CONFIDENCE_THRESHOLD:
+        ablation_mode    = "full"
+        decision_display = f"{predicted_decision} ({confidence:.0%} confident)"
+    else:
+        ablation_mode    = "memory_only"
+        decision_display = (
+            f"{predicted_decision} ({confidence:.0%}) — low confidence, LLM decides intent"
+        )
 
     # Retrieve memories (use a future timestamp so ALL past emails are eligible)
     future_ts = df[df["user_id"] == user_id]["timestamp"].max() + pd.Timedelta(days=1)
@@ -88,11 +108,12 @@ def reply(user_input, user_id, df, ct_model, le, tfidf_vec, all_embs, memory_sto
         predicted_decision = predicted_decision,
         memories           = memories,
         user_id            = user_id,
+        ablation_mode      = ablation_mode,
     )
 
     # Display
     print(f"\n{DIVIDER}")
-    print(f"  🤖 Decision predicted : {predicted_decision}")
+    print(f"  🤖 Decision predicted : {decision_display}")
     print(f"  📚 Memories used      : {len(memories)}")
     print(f"  ⚙  Mode               : {gen['mode']} ({gen['model']})")
     print(f"{DIVIDER}")
